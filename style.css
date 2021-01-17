@@ -40,6 +40,10 @@ header img {
     height: 100%;
   }
 
+  .sections img {
+      width : 35vw
+  }
+
   .partersContainer img {
     width : 15vw
   }
@@ -55,7 +59,7 @@ footer a {
 
 footer a:hover {
     text-decoration : none;
-    color : 
+    color : #DDD5D0
 }
 
 footer {
