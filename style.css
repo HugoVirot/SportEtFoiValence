@@ -6,6 +6,14 @@ body {
     text-align: center;
 }
 
+header, nav {
+    background-color: #DDD5D0
+}
+
+header img, footer img {
+    border-radius: 20px;
+}
+
 #topheader {
     font-style: italic;
     font-size: 1em
@@ -40,8 +48,19 @@ header img {
     width: 19vw
 }
 
+footer a {
+    text-decoration : none;
+    color: inherit
+}
+
+footer a:hover {
+    text-decoration : none;
+    color : 
+}
+
 footer {
     background-color: #0F70B7;
+    color: white
 }
 
 @media screen and (max-width: 575px){
