@@ -178,46 +178,140 @@
 
         <div class="container sections justify-content-center">
 
-            <div class="row justify-content-center">
-                <img src="images/football.jpg" alt="football">
-            </div>
-            <div class="row justify-content-center ">
-                <img src="images/futsal.jpg" alt="futsal">
-            </div>
-            <div class="row justify-content-center ">
-                <img src="images/badminton.jpg" alt="badminton">
-            </div>
-            <div class="row justify-content-center ">
-                <img src="images/volley.jpg" alt="volley">
-            </div>
-            <div class="row justify-content-center ">
-                <img src="images/rando.jpg" alt="randonnée">
-            </div>
-        </div>
-
-        <div class="container pt-5">
-            <div class="row justify-content-center"><i class="far fa-3x fa-handshake"></i></div>
-            <h3 class="pt-2 p-4">PARTENAIRES </h3>
-        </div>
-
-        <div class="container partersContainer">
-
             <div class="row">
-                <div class="col-sm-4 pt-2">
-                    <img src="images/Valence.png">
-                    <p class="mt-3">Ville de Valence</p>
-                </div>
-                <div class="col-sm-4 pt-2">
-                    <img src="images/blv.jpg" class="rounded-circle">
-                    <p class="mt-3">Ville de Bourg-lès-Valence</p>
-                </div>
-                <div class="col-sm-4 pt-2">
-                    <img src="images/alliance.jpg" class="rounded-circle">
-                    <p class="mt-3">Alliance Evangélique du Valentinois</p>
+
+<!-- ********************** section football *********************** -->
+
+                <div class="col-md-6 p-3" onclick="showSectionDetails('sectionFoot')">
+
+                    <img src="images/football.jpg" alt="football">
+
+                    <div class="card text-center mt-2" id="sectionFoot" style="display: none;">
+                        <div class="card-header">
+                            Section Football
+                        </div>
+                        <div class="card-body">
+                            <p class="card-text">Responsable : Vincent PERRI </p>
+                            <p class="card-text">Horaires :  </p>
+                            <p class="card-text">Lieu : VALENCE - stade de la Chamberlière</p>
+                        </div>
+                        <div class="card-footer text-muted">
+                            Intéressé(e) ? Contactez le responsable au 06 00 00 00 00
+                        </div>
+                    </div>
 
                 </div>
+
+
+<!-- ********************** section futsal *********************** -->
+
+                <div class="col-md-6 p-3" onclick="showSectionDetails('sectionFutsal')">
+                    <img src="images/futsal.jpg" alt="futsal">
+
+                    <div class="card text-center mt-2" id="sectionFutsal" style="display: none;">
+                        <div class="card-header">
+                            Section Futsal
+                        </div>
+                        <div class="card-body">
+                            <p class="card-text">Responsable : ??? </p>
+                            <p class="card-text">Horaires : le jeudi, 2 créneaux : 18h-20h et 20h-22h</p>
+                            <p class="card-text">Lieu : VALENCE -  gymnase Marcel Pagnol</p>
+                        </div>
+                        <div class="card-footer text-muted">
+                            Intéressé(e) ? Contactez le responsable au 06 00 00 00 00
+                        </div>
+                    </div>
+                </div>
+
+
+<!-- ********************** section badminton *********************** -->
+
+                <div class="col-md-6 p-3" onclick="showSectionDetails('sectionBad')">
+                    <img src="images/badminton.jpg" alt="badminton">
+
+                    <div class="card text-center mt-2" id="sectionBad" style="display: none;">
+                        <div class="card-header">
+                            Section Badminton
+                        </div>
+                        <div class="card-body">
+                            <p class="card-text">Responsable : ??? </p>
+                            <p class="card-text">Horaires : le jeudi, 20h-22h </p>
+                            <p class="card-text">Lieu : BOURG-LES-VALENCE - Gymnase Louis Jourdan</p>
+                        </div>
+                        <div class="card-footer text-muted">
+                            Intéressé(e) ? Contactez le responsable au 06 00 00 00 00
+                        </div>
+                    </div>
+                </div>
+
+
+<!-- ********************** section volley *********************** -->
+
+                <div class="col-md-6 p-3" onclick="showSectionDetails('sectionVolley')">
+                    <img src="images/volley.jpg" alt="volley">
+
+                    <div class="card text-center mt-2" id="sectionVolley" style="display: none;">
+                        <div class="card-header">
+                            Section Volley
+                        </div>
+                        <div class="card-body">
+                            <p class="card-text">Responsable : Keleto </p>
+                            <p class="card-text">Horaires : le lundi, 20h-22h</p>
+                            <p class="card-text">Lieu : BOURG-LES-VALENCE - Gymnase Louis Jourdan</p>
+                        </div>
+                        <div class="card-footer text-muted">
+                            Intéressé(e) ? Contactez le responsable au 06 00 00 00 00
+                        </div>
+                    </div>
+                </div>
+
+
+<!-- ********************** section randonnée *********************** -->
+
+                <div class="col-md-6 p-3" onclick="showSectionDetails('sectionRando')">
+                    <img src="images/rando.jpg" alt="randonnée">
+
+                    <div class="card text-center mt-2" id="sectionRando" style="display: none;">
+                        <div class="card-header">
+                            Section Randonnée
+                        </div>
+                        <div class="card-body">
+                            <p class="card-text">Responsables : Claude PETTMAN, Jean-Paul TABOYAN </p>
+                            <p class="card-text">Horaires : sorties ponctuelles </p>
+                            <p class="card-text">Lieu : Vercors</p>
+                        </div>
+                        <div class="card-footer text-muted">
+                            Intéressé(e) ? Contactez le responsable au 06 00 00 00 00
+                        </div>
+                    </div>
+                </div>
             </div>
-        </div>
+
+
+
+            <div class="container pt-5">
+                <div class="row justify-content-center"><i class="far fa-3x fa-handshake"></i></div>
+                <h3 class="pt-2 p-4">PARTENAIRES </h3>
+            </div>
+
+            <div class="container partersContainer">
+
+                <div class="row sections">
+                    <div class="col-sm-4 pt-2">
+                        <img src="images/Valence.png">
+                        <p class="mt-3">Ville de Valence</p>
+                    </div>
+                    <div class="col-sm-4 pt-2">
+                        <img src="images/blv.jpg" class="rounded-circle">
+                        <p class="mt-3">Ville de Bourg-lès-Valence</p>
+                    </div>
+                    <div class="col-sm-4 pt-2">
+                        <img src="images/alliance.jpg" class="rounded-circle">
+                        <p class="mt-3">Alliance Evangélique du Valentinois</p>
+
+                    </div>
+                </div>
+            </div>
 
 
     </main>
@@ -243,6 +337,18 @@
         <p>© Copyright 2021 Sport & Foi Agapé Valence</p>
         <p>Conception : <a href="https://www.hugovirot.fr">Hugo Virot</a></p>
     </footer>
+
+    <script>
+        function showSectionDetails(sectionId) {
+            console.log(sectionId);
+            let section = document.getElementById(sectionId);
+            if (section.style.display == "none") {
+                section.style.display = "block"
+            } else {
+                section.style.display = "none"
+            }
+        }
+    </script>
 </body>
 
 </html>

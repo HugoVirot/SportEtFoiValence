@@ -41,7 +41,9 @@ header img {
   }
 
   .sections img {
-      width : 35vw
+      width : 66vw;
+      margin: 0 auto;
+      max-width: 537px
   }
 
   .partersContainer img {
