@@ -50,15 +50,18 @@
                 <ul class="navbar-nav mr-auto w-100 justify-content-around">
                     <li class="nav-item active">
                         <a class="nav-link" href="#">Accueil <span class="sr-only">(current)</span></a>
+                    </li>                    
+                    <li class="nav-item">
+                        <a class="nav-link" href="#actualites">Actualités</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#">Qui sommes-nous ?</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Les sections</a>
+                        <a class="nav-link" href="#sections">Les sections</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Contact</a>
+                        <a class="nav-link" href="#contact">Contact</a>
                     </li>
                 </ul>
             </div>
@@ -74,7 +77,7 @@
                 allowfullscreen></iframe>
         </div>
 
-        <div class="container pt-2">
+        <div class="container pt-2" id="actualites">
             <div class="row justify-content-center"><i class="far fa-3x fa-newspaper"></i></div>
             <h3 class="pt-2 pb-4">ACTUALITES </h3>
         </div>
@@ -89,6 +92,7 @@
                 </button>
 
                 <div class="card-body">
+                    <p><i class="fas fa-birthday-cake fa-3x mt-2"></i></p>
                     <h5 class="card-title p-3 font-weight-bold">20 ans déjà !</h5>
                     <p class="card-text">
                         En février 2001, suite à la demande des joueurs de volley de Sport et Foi Valence,
@@ -119,6 +123,7 @@
                 </button>
 
                 <div class="card-body">
+                    <p><i class="fas fa-users fa-3x mt-2"></i></p>
                     <h5 class="card-title p-3 font-weight-bold">L'équipe de l'époque</h5>
                     <p class="card-text">Voici la première équipe du club de volley Agape Athletic Club de
                         Bourg-lès-Valence,
@@ -141,11 +146,12 @@
             <!--actu 3 -->
 
             <div class="col-md-6 col-lg-4 card p-3" style="width: 18rem;">
-                <button type="button" data-toggle="modal" data-target=".actu2" style="border: none; outline:none">
+                <button type="button" data-toggle="modal" data-target=".actu3" style="border: none; outline:none">
                     <img class="card-img-top" src="images/refugedelatour.jpg" alt="Card image cap">
                 </button>
 
                 <div class="card-body">
+                    <p><i class="fas fa-hiking fa-3x mt-2"></i></p>
                     <h5 class="card-title p-3 font-weight-bold">Sortie raquettes du 19 au 21 mars 2021 dans le Diois
                     </h5>
                     <p class="card-text">La section randonnée de Sport et Foi organise une sortie raquettes du
@@ -155,7 +161,7 @@
                 </div>
 
 
-                <div class="modal fade actu2" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel"
+                <div class="modal fade actu3" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel"
                     aria-hidden="true">
                     <div class="modal-dialog modal-lg" role="document">
                         <div class="modal-body w-100">
@@ -171,7 +177,7 @@
         </div>
 
 
-        <div class="container pt-5">
+        <div class="container pt-5" id="sections">
             <div class="row justify-content-center"><i class="fas fa-3x fa-volleyball-ball"></i></div>
             <h3 class="pt-2 p-4">LES SECTIONS </h3>
         </div>
@@ -182,21 +188,27 @@
 
 <!-- ********************** section football *********************** -->
 
-                <div class="col-md-6 p-3" onclick="showSectionDetails('sectionFoot')">
+                <div class="col-xl-6 p-3" onclick="showSectionDetails('sectionFoot')">
 
                     <img src="images/football.jpg" alt="football">
 
                     <div class="card text-center mt-2" id="sectionFoot" style="display: none;">
                         <div class="card-header">
-                            Section Football
+                           <h4>Section Football réfugiés</h4>
                         </div>
                         <div class="card-body">
                             <p class="card-text">Responsable : Vincent PERRI </p>
-                            <p class="card-text">Horaires :  </p>
-                            <p class="card-text">Lieu : VALENCE - stade de la Chamberlière</p>
+                            <p class="card-text"><i class="fas fa-phone"></i> 07 83 71 70 38</p>
+                            <p class="font-weight-bold">2 créneaux chaque semaine :</p>
+                            <p class="card-text"><i class="fas fa-calendar"></i> Lundi 20h-22h </p>
+                            <p class="card-text"><i class="fa fa-map-marker" aria-hidden="true"></i>
+                                VALENCE - gymnase Marcel Pagnol</p>
+                            <p class="card-text"><i class="fas fa-calendar"></i> Vendredi 18h-20h </p>
+                            <p class="card-text"><i class="fa fa-map-marker" aria-hidden="true"></i>
+                                VALENCE - stade de la Chamberlière</p>
                         </div>
                         <div class="card-footer text-muted">
-                            Intéressé(e) ? Contactez le responsable au 06 00 00 00 00
+                            Intéressé(e) ? Contactez le responsable !
                         </div>
                     </div>
 
@@ -205,20 +217,21 @@
 
 <!-- ********************** section futsal *********************** -->
 
-                <div class="col-md-6 p-3" onclick="showSectionDetails('sectionFutsal')">
+                <div class="col-xl-6 p-3" onclick="showSectionDetails('sectionFutsal')">
                     <img src="images/futsal.jpg" alt="futsal">
 
                     <div class="card text-center mt-2" id="sectionFutsal" style="display: none;">
                         <div class="card-header">
-                            Section Futsal
+                            <h4>Section Futsal</h4>
                         </div>
                         <div class="card-body">
-                            <p class="card-text">Responsable : ??? </p>
-                            <p class="card-text">Horaires : le jeudi, 2 créneaux : 18h-20h et 20h-22h</p>
-                            <p class="card-text">Lieu : VALENCE -  gymnase Marcel Pagnol</p>
+                            <p class="card-text">Responsable : Wameng LY </p>
+                            <p class="card-text"><i class="fas fa-phone"></i> 06 61 76 95 70</p>
+                            <p class="card-text"><i class="fas fa-calendar"></i>  jeudi (2 créneaux) : 18h-20h et 20h-22h</p>
+                            <p class="card-text"><i class="fa fa-map-marker" aria-hidden="true"></i> VALENCE -  gymnase Marcel Pagnol</p>
                         </div>
                         <div class="card-footer text-muted">
-                            Intéressé(e) ? Contactez le responsable au 06 00 00 00 00
+                            Intéressé(e) ? Contactez le responsable !
                         </div>
                     </div>
                 </div>
@@ -226,20 +239,21 @@
 
 <!-- ********************** section badminton *********************** -->
 
-                <div class="col-md-6 p-3" onclick="showSectionDetails('sectionBad')">
+                <div class="col-xl-6 p-3" onclick="showSectionDetails('sectionBad')">
                     <img src="images/badminton.jpg" alt="badminton">
 
                     <div class="card text-center mt-2" id="sectionBad" style="display: none;">
                         <div class="card-header">
-                            Section Badminton
+                            <h4>Section Badminton</h4>
                         </div>
                         <div class="card-body">
-                            <p class="card-text">Responsable : ??? </p>
-                            <p class="card-text">Horaires : le jeudi, 20h-22h </p>
-                            <p class="card-text">Lieu : BOURG-LES-VALENCE - Gymnase Louis Jourdan</p>
+                            <p class="card-text">Responsable : Caroline MANOUKIAN </p>
+                            <p class="card-text"><i class="fas fa-phone"></i> 06 77 90 79 63</p>
+                            <p class="card-text"><i class="fas fa-calendar"></i> Jeudi 20h-22h </p>
+                            <p class="card-text"><i class="fa fa-map-marker" aria-hidden="true"></i> BOURG-LES-VALENCE - Gymnase Louis Jourdan</p>
                         </div>
                         <div class="card-footer text-muted">
-                            Intéressé(e) ? Contactez le responsable au 06 00 00 00 00
+                            Intéressé(e) ? Contactez la responsable !
                         </div>
                     </div>
                 </div>
@@ -247,20 +261,22 @@
 
 <!-- ********************** section volley *********************** -->
 
-                <div class="col-md-6 p-3" onclick="showSectionDetails('sectionVolley')">
+                <div class="col-xl-6 p-3" onclick="showSectionDetails('sectionVolley')">
                     <img src="images/volley.jpg" alt="volley">
 
                     <div class="card text-center mt-2" id="sectionVolley" style="display: none;">
                         <div class="card-header">
-                            Section Volley
+                            <h4>Section Volley</h4>
+                            <p>loisir ou compétition</p>
                         </div>
                         <div class="card-body">
-                            <p class="card-text">Responsable : Keleto </p>
-                            <p class="card-text">Horaires : le lundi, 20h-22h</p>
-                            <p class="card-text">Lieu : BOURG-LES-VALENCE - Gymnase Louis Jourdan</p>
+                            <p class="card-text">Responsable : Kéléto MASEI</p>
+                            <p class="card-text"><i class="fas fa-phone"></i> numéro à venir</p>
+                            <p class="card-text"><i class="fas fa-calendar"></i> Lundi 20h-22h</p>
+                            <p class="card-text"><i class="fa fa-map-marker" aria-hidden="true"></i> BOURG-LES-VALENCE - Gymnase Louis Jourdan</p>
                         </div>
                         <div class="card-footer text-muted">
-                            Intéressé(e) ? Contactez le responsable au 06 00 00 00 00
+                            Intéressé(e) ? Contactez le responsable !
                         </div>
                     </div>
                 </div>
@@ -268,20 +284,21 @@
 
 <!-- ********************** section randonnée *********************** -->
 
-                <div class="col-md-6 p-3" onclick="showSectionDetails('sectionRando')">
+                <div class="col-xl-6 p-3" onclick="showSectionDetails('sectionRando')">
                     <img src="images/rando.jpg" alt="randonnée">
 
                     <div class="card text-center mt-2" id="sectionRando" style="display: none;">
                         <div class="card-header">
-                            Section Randonnée
+                            <h4>Section Randonnée</h4>
                         </div>
                         <div class="card-body">
                             <p class="card-text">Responsables : Claude PETTMAN, Jean-Paul TABOYAN </p>
-                            <p class="card-text">Horaires : sorties ponctuelles </p>
-                            <p class="card-text">Lieu : Vercors</p>
+                            <p><i class="fas fa-hiking"></i> à pied ou en raquettes !</p>
+                            <p class="card-text"><i class="fas fa-calendar"></i> sorties ponctuelles : nuit / journée / week-end </p>
+                            <p class="card-text"><i class="fa fa-map-marker" aria-hidden="true"></i> Vercors</p>
                         </div>
                         <div class="card-footer text-muted">
-                            Intéressé(e) ? Contactez le responsable au 06 00 00 00 00
+                            Intéressé(e) ? Contactez les responsables !
                         </div>
                     </div>
                 </div>
