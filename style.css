@@ -23,6 +23,10 @@ header img {
     width: 38vw
 }
 
+i {
+    color:#0F70B7
+}
+
 .iframeContainer {
     position: relative;
     overflow: hidden;
@@ -38,6 +42,20 @@ header img {
     right: 0;
     width: 100%;
     height: 100%;
+  }
+
+  #articles i {
+      color:#F42D23
+  }
+
+#imagesectionfoot {
+    width : 60vw;
+    max-width: 1000px;
+}
+
+  #notrehistoire span {
+      color: #0F70B7;
+      font-weight: bold
   }
 
   .sections img {
@@ -70,6 +88,7 @@ footer {
 }
 
 @media screen and (max-width: 575px){
+
     header img {
         width: 60vw
     }
