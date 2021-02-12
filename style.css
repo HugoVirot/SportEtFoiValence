@@ -6,11 +6,13 @@ body {
     text-align: center;
 }
 
-header, nav {
+header,
+nav {
     background-color: #DDD5D0
 }
 
-header img, footer img {
+header img,
+footer img {
     border-radius: 20px;
 }
 
@@ -24,17 +26,18 @@ header img {
 }
 
 i {
-    color:#0F70B7
+    color: #0F70B7
 }
 
 .iframeContainer {
     position: relative;
     overflow: hidden;
     width: 100%;
-    padding-top: 56.25%; /* 16:9 Aspect Ratio (divide 9 by 16 = 0.5625) */
-  }
-  
-  .responsive-iframe {
+    padding-top: 56.25%;
+    /* 16:9 Aspect Ratio (divide 9 by 16 = 0.5625) */
+}
+
+.responsive-iframe {
     position: absolute;
     top: 0;
     left: 0;
@@ -42,44 +45,44 @@ i {
     right: 0;
     width: 100%;
     height: 100%;
-  }
+}
 
-  #articles i {
-      color:#F42D23
-  }
+#articles i {
+    color: #F42D23
+}
 
 #imagesectionfoot {
-    width : 60vw;
+    width: 60vw;
     max-width: 1000px;
 }
 
-  #notrehistoire span {
-      color: #0F70B7;
-      font-weight: bold
-  }
+#notrehistoire span {
+    color: #0F70B7;
+    font-weight: bold
+}
 
-  .sections img {
-      width : 66vw;
-      margin: 0 auto;
-      max-width: 537px
-  }
+.sections img {
+    width: 66vw;
+    margin: 0 auto;
+    max-width: 537px
+}
 
-  .partersContainer img {
-    width : 15vw
-  }
+.partersContainer img {
+    width: 15vw
+}
 
-  footer img {
+footer img {
     width: 19vw
 }
 
 footer a {
-    text-decoration : none;
+    text-decoration: none;
     color: inherit
 }
 
 footer a:hover {
-    text-decoration : none;
-    color : #DDD5D0
+    text-decoration: none;
+    color: #DDD5D0
 }
 
 footer {
@@ -87,22 +90,19 @@ footer {
     color: white
 }
 
-@media screen and (max-width: 575px){
-
+@media screen and (max-width: 575px) {
     header img {
         width: 60vw
     }
-
     .partersContainer img {
-        width : 30vw
-      }
-    
+        width: 30vw
+    }
     footer img {
         width: 30vw
-    }   
+    }
 }
 
-@media screen and (min-width: 1200px){
+@media screen and (min-width: 1200px) {
     header img {
         width: 30vw
     }
