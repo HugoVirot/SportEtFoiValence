@@ -25,6 +25,10 @@ header img {
     width: 38vw
 }
 
+header a {
+    text-transform: uppercase;
+}
+
 i {
     color: #0F70B7
 }
@@ -54,11 +58,34 @@ i {
 #imagesectionfoot {
     width: 60vw;
     max-width: 1000px;
+    filter: grayscale(100%);
+}
+
+#imagesectionfoot:hover {
+    filter: grayscale(0%);
 }
 
 #notrehistoire span {
     color: #0F70B7;
     font-weight: bold
+}
+
+.brownbutton {
+    background-color: #DDD5D0;
+}
+
+.brownbutton:hover {
+    background-color: #e2c1ac;
+}
+
+.bluebutton {
+    color : white;
+    background-color: #0F70B7;
+}
+
+.bluebutton:hover {
+    color : white;
+    background-color: #01497c;
 }
 
 .sections img {
@@ -67,9 +94,30 @@ i {
     max-width: 537px
 }
 
+/* ********************* PARTENAIRES ******************** */
+
 .partersContainer img {
     width: 15vw
 }
+
+
+/* ********************* CONTACT ******************** */
+
+#contact {
+    background-color: #DDD5D0;
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    -webkit-transition: .4s ease-in-out;
+    transition: .4s ease-in-out;
+}
+
+#contact:hover {
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
+}
+
+
+/* ********************* FOOTER ******************** */
 
 footer img {
     width: 19vw
