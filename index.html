@@ -4,14 +4,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
-        integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <meta name="description" content="Site officiel de Sport & Foi Valence, association sportive d'inspiration Chrétienne et protestante | Foot - Futsal - Volley - Badminton - Randonnée">
+    <meta property="og:image" content="images/screenshotaccueil.png">
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
         integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
         crossorigin="anonymous"></script>
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
         crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+        integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0/css/all.min.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital@1&display=swap" rel="stylesheet">
@@ -85,9 +90,43 @@
 
         <div class="row justify-content-center" id="articles">
 
+            
+            <!--actu 3 -->
+
+            <div class="col-md-6 col-lg-4 card p-3" style="width: 18rem;">
+                <p><i class="fas fa-calendar-alt text-primary"></i> mercredi 10 février 2021</p>
+                <p><i class="fas fa-hiking fa-3x mt-2"></i></p>
+                <h3 class="card-title pb-4 font-weight-bold">Randonnée les 23, 24 et 25 avril 2021 dans le Diois
+                </h3>
+                <button class="m-3" type="button" data-toggle="modal" data-target=".actu3"
+                    style="border: none; outline:none">
+                    <img class="card-img-top" src="images/refugedelatour.jpg" alt="Card image cap">
+                </button>
+
+                <div class="card-body">
+
+                    <p class="card-text">La section randonnée de Sport et Foi organise une <b>sortie pédestre
+                            entre le vendredi 23 et le dimanche 25 avril prochains,
+                            dans le haut Diois</b> (gîte de la Tour). Intéressé(e) ? <b>Contactez le président Jean-Paul
+                            Taboyan au 06 89 66 28 21.</b></p>
+                </div>
+
+
+                <div class="modal fade actu3" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog modal-lg" role="document">
+                        <div class="modal-body w-100">
+                            <img class="w-100" src="images/refugedelatour.jpg" alt="Card image cap">
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
             <!--actu 1 -->
 
             <div class="col-md-6 col-lg-4 card p-3" style="width: 18rem;">
+                <p><i class="fas fa-calendar-alt text-primary"></i> lundi 1er février 2021</p>
                 <p><i class="fas fa-birthday-cake fa-3x mt-2"></i></p>
                 <h3 class="card-title pb-4 font-weight-bold">20 ans déjà !</h3>
                 <button class="m-3" type="button" data-toggle="modal" data-target=".actu1"
@@ -120,6 +159,7 @@
             <!--actu 2 -->
 
             <div class="col-md-6 col-lg-4 card p-3" style="width: 18rem;">
+                <p><i class="fas fa-calendar-alt text-primary"></i> lundi 1er février 2021</p>
                 <p><i class="fas fa-users fa-3x mt-2"></i></p>
                 <h3 class="card-title pb-4 font-weight-bold">L'équipe de l'époque</h3>
                 <button class="m-3" type="button" data-toggle="modal" data-target=".actu2"
@@ -144,38 +184,6 @@
 
             </div>
 
-
-            <!--actu 3 -->
-
-            <div class="col-md-6 col-lg-4 card p-3" style="width: 18rem;">
-                <p><i class="fas fa-hiking fa-3x mt-2"></i></p>
-                <h3 class="card-title pb-4 font-weight-bold">Randonnée les 23, 24 et 25 avril 2021 dans le Diois
-                </h3>
-                <button class="m-3" type="button" data-toggle="modal" data-target=".actu3"
-                    style="border: none; outline:none">
-                    <img class="card-img-top" src="images/refugedelatour.jpg" alt="Card image cap">
-                </button>
-
-                <div class="card-body">
-
-                    <p class="card-text">La section randonnée de Sport et Foi organise une <b>sortie pédestre
-                            entre le vendredi 23 et le dimanche 25 avril prochains,
-                            dans le haut Diois</b> (gîte de la Tour). Intéressé(e) ? <b>Contactez le président Jean-Paul
-                            Taboyan au 06 89 66 28 21.</b></p>
-                </div>
-
-
-                <div class="modal fade actu3" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel"
-                    aria-hidden="true">
-                    <div class="modal-dialog modal-lg" role="document">
-                        <div class="modal-body w-100">
-                            <img class="w-100" src="images/refugedelatour.jpg" alt="Card image cap">
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-
         </div>
 
         </div>
@@ -194,26 +202,82 @@
             <p class="pb-3">Le but de S&F Valence est de se retrouver tous ensemble (chrétiens ou non, sportifs
                 confirmés ou non, personnes en situation précaire...) autour des valeurs du sport.</p>
 
+            <h5 class="mb-3">Pour en savoir plus, vous pouvez télécharger : </h5>
+            <p>
+                <a href="./documents/historique de Sport et Foi France.docx">
+                    <button class="btn bluebutton">L'historique de Sport & Foi France</button>
+                </a>
+            </p>
+
             <p>
                 <a href="./documents/Le mot du president.docx">
-                    <button class="btn btn-danger">Téléchargez le mot du président J.-P. Taboyan (Word)</button>
+                    <button class="btn btn-danger">Le mot du président J.-P. Taboyan (Word)</button>
                 </a>
             </p>
 
             <p>
                 <a href="./documents/CR activité 2019 - 2020.doc">
-                    <button class="btn brownbutton">Téléchargez le compte-rendu 2019-2020</button>
+                    <button class="btn brownbutton">Le compte-rendu 2019-2020 S&F Valence</button>
                 </a>
             </p>
+            <br>
+            <h5 class="mb-3">A découvrir également :</h5>
 
             <p>
                 <button class="btn bluebutton" onclick="showSectionDetails('notrehistoire')">
-                    Découvrir notre histoire
+                    L'histoire de S&F Valence
                 </button>
             </p>
 
             <div class="container mt-3 text-left" id="notrehistoire" style="display: none;">
-                <h5 class="p-3 text-center">Chronologie</h5>
+                <h3 class="p-2 text-center">Notre histoire</h3>
+                <h5 class="p-3 text-center">Le sport, un phénomène planétaire !</h5>
+                <p>Le sport a pris de nos jours une ampleur incroyable ! Nous n'avons qu'à regarder l'actualité. Les
+                    nouvelles des stars du sport nous parviennent à travers tout type de médias.
+                    Les sportifs sont les héros de notre époque. Le secteur privé, tout comme le secteur public, en a
+                    bien compris les enjeux et son importance, et il y investit des sommes colossales!</p>
+                <p> le sport ne se réduit pas à la pratique d'une activité. Il peut être un formidable vecteur éducatif,
+                    et de socialisation, un moyen d’unir les gens, de créer des relations, de faire tomber toutes les
+                    barrières d’âges et de conditions sociales.</p>
+                <p>Depuis 1980, l’association Sport & Foi France est présent dans le milieu sportif en témoignant de ses
+                    valeurs qu’elle incarne et aux messages qu’elle diffuse dès lors que des projets sont élaborés en ce
+                    sens.</p> 
+                <p>Un peu d’histoire…</p>
+                <p>Il faut savoir que ce sont des chrétiens issus des réveils spirituels du 18 ème et 19 ème siècle qui
+                    ont inventé les sports d’équipe ! </p>
+                - Le rugby inspiré en 1823 par Webb Ellis (Angl) étudiant et futur pasteur <br>
+                - Le football codifié en 1848 à l’Université Protestante de Cambridge (Angl) <br>
+                - Le basket-ball inventé en 1891 par James Naismith (USA) (YMCA : Young Men Christian Association) <br>
+                - Le volley-ball inventé en 1895 par William Morgan (USA) (YMCA : Young Men Christian Association) <br>
+                - Le futsal inventé en 1930 par Juan Carlos Ceriani (Uruguay) (YMCA : Young Men Christian Association)
+                </p>
+
+                <p>A Valence… </p>
+
+                <p>Dans les années 1930 le foyer protestant sous l’appellation de l’Union Chrétienne des Jeunes Gens
+                    (YMCA) a participé à un championnat de basket départemental. A l’époque les sportifs chrétiens du
+                    valentinois n’ont pas su consolider leur association sur du long terme. C'est seulement à la fin des
+                    années 80 que l’on trouve trace de l'existence d’une équipe chrétienne de football intitulée «
+                    Espérance ». Cette équipe interconfessionnelle du valentinois a participé au championnat de ligue
+                    Sud Est organisé par Sport & Foi France.
+
+                    En février 1995 par l’impulsion de Jean-Paul TABOYAN une structure sous l’appellation « Sport et Foi
+                    - vallée du Rhône » a été créée officiellement. </p>
+
+                <p>Si les activités ont commencé par les sorties pédestres et raquettes en montagne, l’association a
+                    fait son chemin en mettant en place des disciplines sportives qui ont permis de toucher un grand
+                    nombre de personnes. Avec l’apport des équipes étrangères et les tournois sportifs organisés chaque
+                    année (volley-ball, football, futsal) Sport et Foi a bénéficié du prêt des installations sportives.
+                </p>
+
+                <p>En mars 2001 la création d’un club de volley-ball sous l'appellation « Agape Athlétic Club » de
+                    Bourg-Lès-Valence a permis aux membres sportifs de participer à un championnat officiel.</p>
+
+                <p>En mars 2012 un essaimage en provenance de Sport et Foi a permis de créer l’association.</p>
+
+                « La Passerelle » à Saint-Marcel-lès-Valence qui concerne une activité de futsal pour mineurs par la
+                suite une section de basket-ball pour adulte a vu le jour.
+                <h5 class="p-3 mt-3 text-center">Chronologie</h5>
                 <p><span>Au premier trimestre 1996</span> Beth Leasure, cycliste américaine de l’état du Colorado,
                     membre de Sport & Foi, a participé à plusieurs courses cyclistes et notamment le Tour de la Drôme.
                 </p>
@@ -295,6 +359,11 @@
                         bronze de la Jeunesse, des sports et de l’engagement associatif de la Drôme</p>
 
                     <div class="text-center">
+                        <a href="#qui-sommes-nous">
+                            <button class="btn btn-danger" onclick="showSectionDetails('notrehistoire')">
+                                Replier
+                            </button>
+                        </a>
                         <a href="./documents/Chronologie évènementielle.doc">
                             <button class="btn bluebutton">Télécharger cette chronologie</button>
                         </a>
@@ -319,7 +388,7 @@
                     <img src="images/football.jpg" alt="football">
 
                     <div class="card text-center mt-2" id="sectionFoot" style="display: none;">
-                        <div class="card-header">
+                        <div class="card-header brownarea">
                             <h4>Section Football réfugiés</h4>
                         </div>
                         <div class="card-body">
@@ -333,9 +402,24 @@
                             <p class="card-text"><i class="fa fa-map-marker" aria-hidden="true"></i> VALENCE - stade de
                                 la Chamberlière</p>
 
-                                <button class="btn btn-danger">En savoir plus</button>
+                            <p>Cette nouvelle section a vu le jour en mars 2018 suite à une rencontre avec Claude
+                                Pettmann, président de l’AFP - Carrefour Cultures de Valence et Jean-Paul Taboyan,
+                                président de Sport et Foi- Agapé.</p>
+                            <p>L’association Carrefour Cultures promeut des actions favorisant le contact entre les
+                                diverses cultures présentes sur notre territoire. Claude Pettmann souligne que beaucoup
+                                de jeunes réfugiés, fuyant les situations périlleuses de leur pays, demandent à
+                                pratiquer le sport. </p>
+                            <p> Sous l’impulsion du Président de Sport et Foi – Agape, une équipe de bénévoles s’est
+                                greffée au projet, afin qu'il puisse se réaliser. Une vingtaine de jeunes en provenance
+                                d’Afghanistan, du Soudan, d’Erythrée et d’autres pays d’Afrique, composent l’équipe de
+                                football. Ils s’entrainent ponctuellement en extérieur ou dans un gymnase. </p>
+                            <p> Des matches amicaux sont organisés ou bien des tournois et souvent ce sont des
+                                opportunités de faire connaitre nos besoins en logistique (Maillots, shorts, chaussures
+                                de futsal ou extérieur, chasubles, plots, ballons de futsal et extérieur) </p>
+                            <p> Toutes personnes sont les bienvenues pour nous aider : les besoins sont multiples !
+                                Prenez contact auprès du Président. </p>
                         </div>
-                        <div class="card-footer text-muted">
+                        <div class="card-footer brownarea">
                             Intéressé(e) ? Contactez le responsable !
                         </div>
                     </div>
@@ -349,7 +433,7 @@
                     <img src="images/futsal.jpg" alt="futsal">
 
                     <div class="card text-center mt-2" id="sectionFutsal" style="display: none;">
-                        <div class="card-header">
+                        <div class="card-header bluearea">
                             <h4>Section Futsal</h4>
                         </div>
                         <div class="card-body">
@@ -359,8 +443,18 @@
                             </p>
                             <p class="card-text"><i class="fa fa-map-marker" aria-hidden="true"></i> VALENCE - gymnase
                                 Marcel Pagnol</p>
+                            <p>L’objectif premier de la section est de se faire plaisir dans le jeu tout en respectant
+                                son adversaire. Pendant les collations nous donnons l’occasion aux joueurs d’apprendre à
+                                mieux se connaitre, et aux nouveaux de s'intégrer. </p>
+                            <p>Les membres participent à des tournois dans des lieux variés : centre pénitencier de
+                                Valence, matches amicaux sur invitation, ou encore Télethon.</p>
+                            <p>Pendant l’année, nous organisons deux tournois en interne, afin que les joueurs des deux
+                                créneaux puissent se rencontrer.</p>
+                            <p>Depuis 2008, Arnaud, trisomique est membre : c’est un privilège de l’avoir dans nos
+                                effectifs. Une deuxième personne trisomique est arrivée en 2017, Martin, bien intégré
+                                également et qui prend du plaisir à jouer en équipe !</p>
                         </div>
-                        <div class="card-footer text-muted">
+                        <div class="card-footer bluearea">
                             Intéressé(e) ? Contactez le responsable !
                         </div>
                     </div>
@@ -373,7 +467,7 @@
                     <img src="images/badminton.jpg" alt="badminton">
 
                     <div class="card text-center mt-2" id="sectionBad" style="display: none;">
-                        <div class="card-header">
+                        <div class="card-header brownarea">
                             <h4>Section Badminton</h4>
                         </div>
                         <div class="card-body">
@@ -382,8 +476,9 @@
                             <p class="card-text"><i class="fas fa-calendar"></i> Jeudi 20h-22h </p>
                             <p class="card-text"><i class="fa fa-map-marker" aria-hidden="true"></i> BOURG-LES-VALENCE -
                                 Gymnase Louis Jourdan</p>
+                            <p></p>
                         </div>
-                        <div class="card-footer text-muted">
+                        <div class="card-footer brownarea">
                             Intéressé(e) ? Contactez la responsable !
                         </div>
                     </div>
@@ -396,7 +491,7 @@
                     <img src="images/volley.jpg" alt="volley">
 
                     <div class="card text-center mt-2" id="sectionVolley" style="display: none;">
-                        <div class="card-header">
+                        <div class="card-header bluearea">
                             <h4>Section Volley</h4>
                             <p>loisir ou compétition</p>
                         </div>
@@ -406,8 +501,27 @@
                             <p class="card-text"><i class="fas fa-calendar"></i> Lundi 20h-22h</p>
                             <p class="card-text"><i class="fa fa-map-marker" aria-hidden="true"></i> BOURG-LES-VALENCE -
                                 Gymnase Louis Jourdan</p>
+                            <p>Le volley-ball est un jeu d’équipe où la technique joue un rôle important pour chaque
+                                joueur. </p>
+                            <p>Nos objectifs sont les suivants : </p>
+                            <ul>
+                                <li>Que nos membres puissent progresser par des exercices techniques simples afin
+                                    d'obtenir une certaine aisance de jeu sans "se prendre la tête" !</li>
+                                <li>Créer une dynamique d'entraide</li>
+                                <li>Faire en sorte que chaque personne puisse trouver sa place, s’encourager et former
+                                    un collectif.</li>
+                            </ul>
+                            <p>Si ces ojectifs vous motivent, vous êtes le (la) bienvenu(e) quelque soit votre niveau.
+                            </p>
+
+                             La section est composée de deux groupes :
+                            <ul>
+                                <li>Une équipe évoluant en championnat Ufolep Drome-Ardèche</li>
+                                <li>Une section loisir</li>
+                            </ul>
+                            </p>
                         </div>
-                        <div class="card-footer text-muted">
+                        <div class="card-footer bluearea text-light">
                             Intéressé(e) ? Contactez le responsable !
                         </div>
                     </div>
@@ -420,18 +534,30 @@
                     <img src="images/rando.jpg" alt="randonnée">
 
                     <div class="card text-center mt-2" id="sectionRando" style="display: none;">
-                        <div class="card-header">
+                        <div class="card-header brownarea">
                             <h4>Section Randonnée</h4>
                         </div>
                         <div class="card-body">
                             <p class="card-text">Responsables : Claude PETTMAN, Jean-Paul TABOYAN </p>
-                            <p><i class="fas fa-hiking"></i> à pied ou en raquettes</p>
-                            <p class="card-text"><i class="fas fa-phone"></i> 06 89 66 28 21</p>
-                            <p class="card-text"><i class="fas fa-calendar"></i> sorties ponctuelles : nuit / journée /
+                            <p><i class="fas fa-hiking"></i> &nbsp à pied ou en raquettes</p>
+                            <p class="card-text"><i class="fas fa-phone"></i> &nbsp 06 89 66 28 21</p>
+                            <p class="card-text"><i class="fas fa-calendar"></i> &nbsp sorties ponctuelles : nuit /
+                                journée /
                                 week-end </p>
-                            <p class="card-text"><i class="fa fa-map-marker" aria-hidden="true"></i> Vercors</p>
+                            <p class="card-text"><i class="fa fa-map-marker" aria-hidden="true"></i> &nbsp Vercors</p>
+                            <p>Depuis la création de l’association en 1995, le trekking et les sorties en raquettes en
+                                moyenne montagne ont été organisés ponctuellement souvent sur la durée de 3 à 4 jours.
+                            </p>
+                            <p>En 2018 nous avons relancé la randonnée après un temps sabbatique en accueillant des
+                                demandeurs d’asile.</p>
+                            <p>Les sorties que nous proposons plus récemment ont une difficulté moyenne moins de 1000m
+                                de dénivelés et pour des marcheurs qui ont l’habitude d’accumuler plus de 6 heures de
+                                randonnée.</p>
+                            <p>la demande nous pouvons vous soumettre des nuitées en refuge non gardé ou bien en gîte.
+                            </p>
+                            <p>Pour plus de renseignements, prenez contact auprès du Président. </p>
                         </div>
-                        <div class="card-footer text-muted">
+                        <div class="card-footer brownarea">
                             Intéressé(e) ? Contactez les responsables !
                         </div>
                     </div>
@@ -545,16 +671,32 @@
             <h3 class="pt-2 p-4">CONTACT</h3>
         </div>
 
-        <div class="container p-5 text-dark text-left" id="contact">
-            <div class="pl-5">
-                <h5><b>président</b> : Jean-Paul TABOYAN <i class="fas fa-phone"></i> 06 89 66 28 21</h5>
-                <h5><b>entraîneur foot réfugiés</b> : Vincent PERRI <i class="fas fa-phone"></i> 07 83 71 70 38</h5>
-                <h5><b>entraîneur futsal</b> : Wameng LY <i class="fas fa-phone"></i> 06 61 76 95 70</h5>
-                <h5><b>entraîneur volley</b> : Kéléto MASERU <i class="fas fa-phone"></i> 07 77 08 16 13</h5>
-                <h5><b>entraîneur badminton</b> : Caroline MANOUKIAN <i class="fas fa-phone"></i> 06 77 90 79 63</h5>
-                <h5><b>responsables randonnée</b> : Jean-Paul TABOYAN / Claude PETTMAN <i class="fas fa-phone"></i> 06
-                    89 66 28 21 / numéro à venir</h5>
-            </div>
+        <div class="container p-5 text-dark text-center" id="contact">
+            <h4><b>Le bureau</b></h4><br>
+            <h5><b>président</b> : Jean-Paul TABOYAN</h5>
+            <p><i class="fas fa-phone"></i> 06 89 66 28 21</p>
+            <h5><b>Vice-président</b> : Wameng LY</h5>
+            <p><i class="fas fa-phone"></i> 06 61 76 95 70</p>
+            <h5><b>Secrétaire</b> : Caroline MANOUKIAN</h5>
+            <p><i class="fas fa-phone"></i> 06 77 90 79 63</h5>
+            </p>
+            <h5><b>Trésorier</b> : Christian ARMAND</h5>
+            <p><i class="fas fa-phone"></i> numéro à venir</h5>
+            </p>
+            <br>
+            <h4><b>Les sections</b></h4><br>
+            <h5><b>entraîneur foot réfugiés</b> : Vincent PERRI</h5>
+            <p><i class="fas fa-phone"></i> 07 83 71 70 38</p>
+            <h5><b>entraîneur futsal</b> : Wameng LY</h5>
+            <p><i class="fas fa-phone"></i> 06 61 76 95 70</p>
+            <h5><b>entraîneur volley</b> : Kéléto MASERU</h5>
+            <p><i class="fas fa-phone"></i> 07 77 08 16 13</h5>
+            </p>
+            <h5><b>entraîneur badminton</b> : Caroline MANOUKIAN</h5>
+            <p><i class="fas fa-phone"></i> 06 77 90 79 63</h5>
+            </p>
+            <h5><b>responsables randonnée</b> : Jean-Paul TABOYAN / Claude PETTMAN</h5>
+            <p><i class="fas fa-phone"></i> 06 89 66 28 21 / 06 16 04 26 58</p>
         </div>
     </main>
 
@@ -567,7 +709,7 @@
                 </div>
                 <div class="col-sm-4 pt-3">
                     <h5>Association sportive d'inspiration <br>chrétienne et protestante</h5>
-                    <a href="#topheader"><button class=" btn btn-danger mt-2 ">Haut de page</button></a>
+                    <a href="#topheader"><button class=" btn btn-danger m-2 ">Haut de page</button></a>
                 </div>
                 <div class="col-sm-4 ">
                     <p>FOOT / FUTSAL<br> BADMINTON
