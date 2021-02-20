@@ -33,6 +33,10 @@ i {
     color: #0F70B7
 }
 
+.bluetitle {
+    color: #0F70B7
+}
+
 .iframeContainer {
     position: relative;
     overflow: hidden;
@@ -49,6 +53,19 @@ i {
     right: 0;
     width: 100%;
     height: 100%;
+}
+
+
+/* ********************* ACTUALITES ******************** */
+
+.articlesTitles {
+    color: #0F70B7;
+    background-color: #DDD5D0;
+    text-transform: uppercase;
+}
+
+.articlesTexts {
+    line-height: 2em;
 }
 
 #articles i {
