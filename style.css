@@ -124,13 +124,28 @@ i {
     background-color: #DDD5D0;
     -webkit-transform: scale(1);
     transform: scale(1);
-    -webkit-transition: .4s ease-in-out;
-    transition: .4s ease-in-out;
+    -webkit-transition: 0.7s ease-in-out;
+    transition: 0.7s ease-in-out;
 }
 
 #contact:hover {
-    -webkit-transform: scale(1.2);
-    transform: scale(1.2);
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+}
+
+
+/* ********************* PAGES SECTIONS ******************** */
+
+.coordonnees, .descriptionSection {
+    width: 50vw;
+}
+
+.carouselSections {
+    width: 70vw;
+}
+
+.emissionRadio {
+    width : 50vw;
 }
 
 
@@ -164,6 +179,15 @@ footer {
     }
     footer img {
         width: 30vw
+    }
+    .coordonnees, .descriptionSection {
+        width : 80vw;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .emissionRadio {
+        width : 80vw;
     }
 }
 
