@@ -29,12 +29,29 @@ header a {
     text-transform: uppercase;
 }
 
+main {
+    margin-left: 5vw;
+    margin-right: 5vw;
+}
+
 i {
     color: #0F70B7
 }
 
 .bluetitle {
     color: #0F70B7
+}
+
+.picture {
+    width : 60vw;
+    max-width: 600px
+}
+
+.imageModalButton {
+    border: none; 
+    outline: none; 
+    padding: 0;
+    background: none;
 }
 
 .iframeContainer {
@@ -75,11 +92,17 @@ i {
 #imagesectionfoot {
     width: 60vw;
     max-width: 1000px;
-    filter: grayscale(100%);
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    -webkit-transition: 0.7s ease-in-out;
+    transition: 0.7s ease-in-out;
 }
 
 #imagesectionfoot:hover {
-    filter: grayscale(0%);
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+    -webkit-transition: 0.7s ease-in-out;
+    transition: 0.7s ease-in-out;
 }
 
 #notrehistoire span {
