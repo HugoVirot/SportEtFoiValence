@@ -49,7 +49,7 @@
             </div>
         </div>
 
-        <nav class="navbar navbar-light navbar-expand-md sticky-top p-3 ">
+        <nav class="navbar navbar-light navbar-expand-md p-3 ">
 
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
                 aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -96,11 +96,11 @@
 
     </header>
 
-    <main class="p-5">
+    <main class="pt-5 pb-5 m-auto">
         <h1 class="m-4"><i class="fas fa-volleyball-ball"></i> Section Volley <i class="fas fa-volleyball-ball"></i>
         </h1>
 
-        <img class="m-auto" id="imagesectionfoot" src="./images/carousel/volley.jpg">
+        <img class="m-auto imagepresentation" src="./images/carousel/volley.jpg">
 
         <div class="container p-5 mt-5 border border-primary coordonnees">
             <p class="card-text"><i class="fas fa-user"></i> Responsable : Kéléto MASEI</p>
@@ -117,7 +117,7 @@
             <ul>
                 <li>Que nos membres puissent progresser par des exercices techniques simples afin
                     d'obtenir une certaine aisance de jeu sans "se prendre la tête" !</li>
-                <li>Créer une dynamique d'entraide, s’encourager et former
+            <li>Créer une dynamique d'entraide, s’encourager et former
                     un collectif.</li>
                 <li>Faire en sorte que chaque personne puisse trouver sa place</li>
             </ul>
@@ -129,6 +129,11 @@
                 <li>Une équipe évoluant en championnat Ufolep Drome-Ardèche</li>
                 <li>Une section loisir</li>
             </ul>
+            </p>
+            <p class="text-center m-4">
+                <a href="./documents/historique volley 2001-2020.doc">
+                    <button class="btn btn-danger">Historique Section Volley 2001-2020</button>
+                </a>
             </p>
         </div>
 
@@ -286,6 +291,14 @@
                 section.style.display = "none "
             }
         }
+
+        $(window).scroll(function () {
+            if ($(this).scrollTop() > 380) {
+                $('.navbar').addClass("fixed-top");
+            } else {
+                $('.navbar').removeClass("fixed-top");
+            }
+        });
     </script>
 
 </body>

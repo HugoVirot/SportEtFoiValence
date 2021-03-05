@@ -11,6 +11,11 @@ nav {
     background-color: #DDD5D0
 }
 
+nav {
+    position: fixed;
+    
+}
+
 header img,
 footer img {
     border-radius: 20px;
@@ -89,7 +94,7 @@ i {
     color: #F42D23
 }
 
-#imagesectionfoot {
+.imagepresentation {
     width: 60vw;
     max-width: 1000px;
     -webkit-transform: scale(1);
@@ -98,7 +103,7 @@ i {
     transition: 0.7s ease-in-out;
 }
 
-#imagesectionfoot:hover {
+.imagepresentation:hover {
     -webkit-transform: scale(1.1);
     transform: scale(1.1);
     -webkit-transition: 0.7s ease-in-out;
@@ -193,6 +198,9 @@ footer {
     color: white
 }
 
+
+/* ********************* RESPONSIVE ******************** */
+
 @media screen and (max-width: 575px) {
     header img {
         width: 60vw
@@ -200,11 +208,18 @@ footer {
     .partersContainer img {
         width: 30vw
     }
+    .imagepresentation{
+        width : 90vw
+    }
     footer img {
         width: 30vw
     }
     .coordonnees, .descriptionSection {
         width : 80vw;
+    }
+    .carousel {
+        width: 90vw;
+        margin: 0 auto
     }
 }
 

@@ -49,7 +49,7 @@
             </div>
         </div>
 
-        <nav class="navbar navbar-light navbar-expand-md sticky-top p-3 ">
+        <nav class="navbar navbar-light navbar-expand-md p-3">
 
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
                 aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -96,7 +96,7 @@
 
     </header>
 
-    <main class="pt-5 pb-5">
+    <main class="pt-5 pb-5 m-auto">
 
         <div class="container iframeContainer">
             <iframe class="responsive-iframe" src="https://www.youtube.com/embed/9t4muqGu5qU" frameborder="0"
@@ -218,7 +218,7 @@
         </div>
 
         <div class="container border border-secondary p-4 sections justify-content-center" id="quisommesnouscontainer">
-            <img class="m-5" id="imagesectionfoot" src="./images/bienvenue.PNG">
+            <img class="m-5 imagepresentation" src="./images/bienvenue.PNG">
             <h3>Sport & Foi est une association sportive d'inspiration chrétienne et protestante.</h3>
             <h4>Elle existe au niveau national <a href="https://sportetfoifrance.org/">(Sport & Foi France).</a></h4>
             <h5>Il existe aussi des sections locales indépendantes, comme Sport & Foi Valence.</h5>
@@ -774,11 +774,19 @@
             console.log(sectionId);
             let section = document.getElementById(sectionId);
             if (section.style.display == "none") {
-                section.style.display = "block "
+                section.style.display = "block"
             } else {
-                section.style.display = "none "
+                section.style.display = "none"
             }
         }
+
+        $(window).scroll(function () {
+            if ($(this).scrollTop() > 380) {
+                $('.navbar').addClass("fixed-top");
+            } else {
+                $('.navbar').removeClass("fixed-top");
+            }
+        });
     </script>
 </body>
 

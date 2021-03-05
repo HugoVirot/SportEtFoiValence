@@ -49,7 +49,7 @@
             </div>
         </div>
 
-        <nav class="navbar navbar-light navbar-expand-md sticky-top p-3 ">
+        <nav class="navbar navbar-light navbar-expand-md p-3 ">
 
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
                 aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -96,10 +96,10 @@
 
     </header>
 
-    <main class="p-5">
+    <main class="pt-5 pb-5 m-auto">
         <h1 class="m-4"><i class="far fa-futbol"></i> Section Futsal <i class="far fa-futbol"></i></h1>
 
-        <img class="m-auto" id="imagesectionfoot" src="./images/carousel/groupefutsal.JPG">
+        <img class="m-auto imagepresentation" src="./images/carousel/groupefutsal.JPG">
 
         <div class="container p-5 mt-5 mb-5 border border-primary coordonnees">
             <p class="card-text"><i class="fas fa-user"></i> Responsable : Wameng LY </p>
@@ -236,6 +236,14 @@
                 section.style.display = "none "
             }
         }
+
+        $(window).scroll(function () {
+            if ($(this).scrollTop() > 380) {
+                $('.navbar').addClass("fixed-top");
+            } else {
+                $('.navbar').removeClass("fixed-top");
+            }
+        });
     </script>
 
 </body>
