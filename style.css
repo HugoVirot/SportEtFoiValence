@@ -115,6 +115,10 @@ i {
     font-weight: bold
 }
 
+.brownbutton {
+    margin-top: 1em;
+}
+
 .brownbutton, .brownarea {
     background-color: #DDD5D0;
 }
@@ -138,6 +142,20 @@ i {
     margin: 0 auto;
     max-width: 537px
 }
+
+/* ********************* INSCRIPTIONS ******************** */
+
+#inscriptions {
+    background-image: url(images/foot3.jpg);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+#inscriptions h3 {
+    background-color:#0F70B7
+}
+
 
 /* ********************* PARTENAIRES ******************** */
 
