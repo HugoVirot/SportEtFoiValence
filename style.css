@@ -92,6 +92,22 @@ i {
   color: #f42d23;
 }
 
+.imagepresentation {
+    width: 80vw !important;
+    max-width: 800px !important;
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    -webkit-transition: 0.7s ease-in-out;
+    transition: 0.7s ease-in-out;
+}
+
+.imagepresentation:hover {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+    -webkit-transition: 0.7s ease-in-out;
+    transition: 0.7s ease-in-out;
+}
+
 #quisommesnouscontainer {
   background-image: url(images/imagebienvenue.jpg);
   background-position: center;
