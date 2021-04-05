@@ -86,9 +86,10 @@ i {
 
 .articlesTexts {
   line-height: 2em;
+  text-align: left;
 }
 
-#articles i {
+.articles i {
   color: #f42d23;
 }
 
@@ -180,13 +181,13 @@ i {
   background-color: #ddd5d0;
   -webkit-transform: scale(1);
   transform: scale(1);
-  -webkit-transition: 0.7s ease-in-out;
-  transition: 0.7s ease-in-out;
+  -webkit-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
 }
 
 #contact:hover {
-  -webkit-transform: scale(1.07);
-  transform: scale(1.07);
+  -webkit-transform: scale(1.05);
+  transform: scale(1.05);
 }
 
 /* ********************* PAGES SECTIONS ******************** */
