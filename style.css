@@ -78,6 +78,20 @@ i {
 
 /* ********************* ACTUALITES ******************** */
 
+#headline {
+  background-color: #0f70b7;
+  color: white;
+  border-radius : 20px
+}
+
+#headline i {
+  color : red
+}
+
+#headline h1 {
+  font-size : 3.2rem
+}
+
 .articlesTitles {
   color: #0f70b7;
   background-color: #ddd5d0;
