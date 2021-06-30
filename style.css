@@ -88,6 +88,10 @@ i {
   color : red
 }
 
+#headline hr {
+  background-color: white;
+}
+
 #headline h1 {
   font-size : 3.2rem
 }
