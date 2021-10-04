@@ -112,8 +112,8 @@ i {
 }
 
 .imagepresentation {
-    width: 80vw !important;
-    max-width: 800px !important;
+    width: 60vw !important;
+    max-width: 700px !important;
     -webkit-transform: scale(1);
     transform: scale(1);
     -webkit-transition: 0.7s ease-in-out;
