@@ -15,6 +15,42 @@ nav {
   position: fixed;
 }
 
+/* Le bandeau cookie */
+.cookie-banner {
+  display: none;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.cookie-banner.active {
+  display: block;
+}
+
+/* Overlay de la boite de dialogue */
+.cookie-inform-and-ask {
+  background-color: grey;
+  display: none;
+  height: 100%;
+  left: 0;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.cookie-inform-and-ask.active {
+  display: block;
+}
+
+/*La vraie boîte de dialogue*/
+.cookie-dialog {
+  left: 50%;
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 70%;
+}
+
 header img,
 footer img {
   border-radius: 20px;
@@ -81,11 +117,11 @@ i {
 #headline {
   background-color: #0f70b7;
   color: white;
-  border-radius : 20px
+  border-radius: 20px;
 }
 
 #headline i {
-  color : red
+  color: red;
 }
 
 #headline hr {
@@ -93,7 +129,7 @@ i {
 }
 
 #headline h1 {
-  font-size : 3.2rem
+  font-size: 3.2rem;
 }
 
 .articlesTitles {
@@ -112,19 +148,19 @@ i {
 }
 
 .imagepresentation {
-    width: 60vw !important;
-    max-width: 700px !important;
-    -webkit-transform: scale(1);
-    transform: scale(1);
-    -webkit-transition: 0.7s ease-in-out;
-    transition: 0.7s ease-in-out;
+  width: 60vw !important;
+  max-width: 900px !important;
+  -webkit-transform: scale(1);
+  transform: scale(1);
+  -webkit-transition: 0.7s ease-in-out;
+  transition: 0.7s ease-in-out;
 }
 
 .imagepresentation:hover {
-    -webkit-transform: scale(1.1);
-    transform: scale(1.1);
-    -webkit-transition: 0.7s ease-in-out;
-    transition: 0.7s ease-in-out;
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+  -webkit-transition: 0.7s ease-in-out;
+  transition: 0.7s ease-in-out;
 }
 
 #quisommesnouscontainer {
@@ -136,7 +172,7 @@ i {
 
 #bienvenuetextes {
   background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2));
-  width : 50vw
+  width: 50vw;
 }
 
 #notrehistoire span {
@@ -267,8 +303,8 @@ footer {
     width: 90vw;
     margin: 0 auto;
   }
-  #bienvenuetextes{
-      width: 100vw
+  #bienvenuetextes {
+    width: 100vw;
   }
 }
 
