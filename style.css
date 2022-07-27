@@ -9,7 +9,7 @@ body {
 header,
 nav {
   background-color: #0f70b7;
-  color: white
+  color: white;
 }
 
 nav {
@@ -307,6 +307,18 @@ footer {
   #bienvenuetextes {
     width: 100vw;
   }
+}
+
+@media screen and (max-width: 576px) {
+    .imageArticle {
+    width: 75vw !important;
+  }
+}
+
+@media screen and (min-width: 577px) and (max-width: 767px) {
+  .imageArticle {
+  width: 55vw !important;
+}
 }
 
 @media screen and (max-width: 768px) {
