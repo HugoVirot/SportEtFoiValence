@@ -291,7 +291,7 @@ footer {
     width: 30vw;
   }
   .imagepresentation {
-    width: 90vw;
+    width: 100vw;
   }
   footer img {
     width: 30vw;
@@ -307,11 +307,13 @@ footer {
   #bienvenuetextes {
     width: 100vw;
   }
-}
 
-@media screen and (max-width: 576px) {
     .imageArticle {
     width: 75vw !important;
+  }
+
+  .carouselSections {
+    width: 100vw;
   }
 }
 
