@@ -224,10 +224,27 @@ i {
   background-color: #0f70b7;
 }
 
+/* ********************* SECTIONS ******************** */
+
+.sectionimg {
+  transition: 1s;
+}
+
+.sectionimg:hover {
+  transform: scale(1.3);
+  transition: 1s;
+}
+
 /* ********************* PARTENAIRES ******************** */
 
-.partersContainer img {
+#partnersContainer img {
   width: 15vw;
+  transition: 1s;
+}
+
+#partnersContainer img:hover {
+  transform: scale(1.3);
+  transition: 1s;
 }
 
 /* ********************* CONTACT ******************** */
@@ -237,12 +254,13 @@ i {
   -webkit-transform: scale(1);
   transform: scale(1);
   -webkit-transition: 0.5s ease-in-out;
-  transition: 0.5s ease-in-out;
+  transition: 1s ease-in-out;
 }
 
 #contact:hover {
   -webkit-transform: scale(1.05);
   transform: scale(1.05);
+  transition: 1s ease-in-out;
 }
 
 /* ********************* PAGES SECTIONS ******************** */
@@ -253,7 +271,7 @@ i {
 }
 
 .carouselSections {
-  width: 70vw;
+  width: auto;
 }
 
 .emissionRadio {
