@@ -8,17 +8,11 @@
         content="Section Football Réfugiés | Sport & Foi Valence, association sportive d'inspiration Chrétienne et protestante">
     <meta property="og:image" content="images/screenshotaccueil.png">
 
-    <!-- bootstrap-->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
-        integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <!-- bootstrap 5.3 (CSS) -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
 
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-        crossorigin="anonymous"></script>
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
-        crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.3.js"></script>
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0/css/all.min.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -123,7 +117,7 @@
             <p class="card-text"><i class="fa fa-map-marker" aria-hidden="true"></i> VALENCE - stade de
                 la Chamberlière (terrain annexe) </p>
         </div>
-        
+
         <div class="container p-2">
             <p class="m-5">En 2022, le groupe a grandi avec 18 joueurs en provenance de Somalie, Syrie, Mali,
                 Afghanistan, Angola, Guinée, Sénégal, Algérie, Cote-Ivoire, et Sierra-Léone. <br><br>
@@ -142,23 +136,35 @@
         </div>
 
         <!-- slider photos -->
+        <div id="carouselFoot" class="carousel slide container-md mb-5" data-bs-ride="false" id="carouselDiv">
 
-        <div id="carouselExampleCaptions" class="carousel carouselSections m-auto slide mb-5" data-bs-ride="carousel"
-            id="carouselDiv">
             <ol class="carousel-indicators">
-                <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
-                <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
-                <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
-                <li data-target="#carouselExampleCaptions" data-slide-to="3"></li>
-                <li data-target="#carouselExampleCaptions" data-slide-to="4"></li>
-                <li data-target="#carouselExampleCaptions" data-slide-to="5"></li>
-                <li data-target="#carouselExampleCaptions" data-slide-to="6"></li>
-                <li data-target="#carouselExampleCaptions" data-slide-to="7"></li>
-                <li data-target="#carouselExampleCaptions" data-slide-to="8"></li>
-                <li data-target="#carouselExampleCaptions" data-slide-to="9"></li>
-                <li data-target="#carouselExampleCaptions" data-slide-to="10"></li>
-                <li data-target="#carouselExampleCaptions" data-slide-to="11"></li>
-                <li data-target="#carouselExampleCaptions" data-slide-to="12"></li>
+                <button type="button" data-bs-target="#carouselFoot" data-bs-slide-to="0" class="active"
+                aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselFoot" data-bs-slide-to="1"
+                aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselFoot" data-bs-slide-to="2"
+                aria-label="Slide 3"></button>
+            <button type="button" data-bs-target="#carouselFoot" data-bs-slide-to="3"
+                aria-label="Slide 4"></button>
+            <button type="button" data-bs-target="#carouselFoot" data-bs-slide-to="4"
+                aria-label="Slide 5"></button>
+            <button type="button" data-bs-target="#carouselFoot" data-bs-slide-to="5"
+                aria-label="Slide 6"></button>
+            <button type="button" data-bs-target="#carouselFoot" data-bs-slide-to="6"
+                aria-label="Slide 7"></button>
+            <button type="button" data-bs-target="#carouselFoot" data-bs-slide-to="7"
+                aria-label="Slide 8"></button>
+            <button type="button" data-bs-target="#carouselFoot" data-bs-slide-to="8"
+                aria-label="Slide 9"></button>
+            <button type="button" data-bs-target="#carouselFoot" data-bs-slide-to="9"
+                aria-label="Slide 10"></button>
+                <button type="button" data-bs-target="#carouselFoot" data-bs-slide-to="10"
+                aria-label="Slide 11"></button>
+                <button type="button" data-bs-target="#carouselFoot" data-bs-slide-to="11"
+                aria-label="Slide 12"></button>
+                <button type="button" data-bs-target="#carouselFoot" data-bs-slide-to="12"
+                aria-label="Slide 13"></button>
             </ol>
             <div class="carousel-inner">
                 <div class="carousel-item active">
@@ -201,14 +207,14 @@
                     <img src="images/foot/foot9.jpg" class="d-block w-100" alt="groupe foot 9">
                 </div>
             </div>
-            <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselFoot" data-bs-slide="prev">
                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="sr-only">Previous</span>
-            </a>
-            <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselFoot" data-bs-slide="next">
                 <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="sr-only">Next</span>
-            </a>
+                <span class="visually-hidden">Next</span>
+            </button>
         </div>
 
         <div class="container descriptionSection mt-5">
@@ -238,18 +244,7 @@
         <h3 class="pt-2 pb-4">REVUE DE PRESSE</h3>
     </div>
 
-    <div class="row justify-content-center mt-2 mb-3"><i class="fas fa-3x fa-microphone-alt"></i></div>
-    <h4 class="mt-2 bluetitle">Reportage RCF du 18/10/20 sur la section Foot réfugiés</h4>
-
-    <iframe class="mt-4 mb-5 emissionRadio" src="https://rcf.fr/embed/2486179" frameborder="0"></iframe>
-
-    <p>
-        <a href="https://c.ledauphine.com/drome/2018/12/03/a-valence-une-equipe-de-football-pour-integrer-les-refugies">
-            <button class="btn btn-danger">reportage vidéo Dauphiné Libéré</button>
-        </a>
-    </p>
-
-    <p>Article correspondant :</p>
+    <p>Article du Dauphiné Libéré</p>
 
     <button class="m-2 imageModalButton" type="button" data-toggle="modal" data-target=".articlePresse">
         <img class="card-img-top picture" src="images/foot/nov2018DL.jpg" alt="Card image cap">
@@ -264,6 +259,11 @@
         </div>
     </div>
 
+    <p>
+        <a href="https://c.ledauphine.com/drome/2018/12/03/a-valence-une-equipe-de-football-pour-integrer-les-refugies">
+            <button class="btn btn-danger">à lire également ici</button>
+        </a>
+    </p>
 
     <footer class="p-4 mt-5">
 
@@ -383,28 +383,24 @@
         <p>Conception : <a href="https://www.hugovirot.fr ">Hugo Virot</a></p>
     </footer>
 
-    <script>
-        $("body").on("contextmenu", function (e) {
-            return false;
-        });
+    <!-- JS de Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
 
-        function showSectionDetails(sectionId) {
-            console.log(sectionId);
-            let section = document.getElementById(sectionId);
-            if (section.style.display == "none") {
-                section.style.display = "block "
+    <script>
+        // empêcher le clic droit (menu contextuel)
+        document.oncontextmenu = () => { return false };
+
+        // masquer la navbar quand on descend de + de 380 px
+        window.onscroll = function () {
+            let navbar = document.getElementsByTagName('nav')[0]
+            if (window.scrollY > 380) {
+                navbar.classList.add("fixed-top");
             } else {
-                section.style.display = "none "
+                navbar.classList.remove("fixed-top");
             }
         }
-
-        $(window).scroll(function () {
-            if ($(this).scrollTop() > 380) {
-                $('.navbar').addClass("fixed-top");
-            } else {
-                $('.navbar').removeClass("fixed-top");
-            }
-        });
     </script>
 
     <!-- Global site tag (gtag.js) - Google Analytics

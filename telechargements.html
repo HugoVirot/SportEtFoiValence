@@ -5,20 +5,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description"
-    content="Téléchargements | Sport & Foi Valence, association sportive d'inspiration Chrétienne et protestante">
+        content="Téléchargements | Sport & Foi Valence, association sportive d'inspiration Chrétienne et protestante">
     <meta property="og:image" content="images/screenshotaccueil.png">
 
-    <!-- bootstrap-->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
-        integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
-
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-        crossorigin="anonymous"></script>
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
-        crossorigin="anonymous"></script>
+    <!-- bootstrap 5.3 (CSS) -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0/css/all.min.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -149,7 +141,7 @@
             <h3 class="pt-4">L'association</h3>
 
             <div class="row pt-5 pb-5 m-auto">
-                <div class="col-md-6 mt-3">
+                <div class="col-md-4 mt-3">
                     <div class="row m-auto justify-content-center">
                         <i class="fas fa-book fa-4x"></i>
                     </div>
@@ -160,13 +152,25 @@
                     </div>
                 </div>
 
-                <div class="col-md-6 mt-3">
+                <div class="col-md-4 mt-3">
                     <div class="row m-auto justify-content-center">
                         <i class="fas fa-file-alt fa-4x"></i>
                     </div>
                     <div class="row m-auto justify-content-center">
                         <a href="./documents/Règlement interieur 2019.docx">
-                            <button class="btn brownbutton">Règlement intérieur 2019</button>
+                            <button class="btn brownbutton">Règlement intérieur (Word)</button>
+                        </a>
+                    </div>
+                </div>
+
+
+                <div class="col-md-4 mt-3">
+                    <div class="row m-auto justify-content-center">
+                        <i class="fas fa-file-alt fa-4x"></i>
+                    </div>
+                    <div class="row m-auto justify-content-center">
+                        <a href="./documents/Règlement interieur 2019.pdf">
+                            <button class="btn brownbutton">Règlement intérieur (PDF)</button>
                         </a>
                     </div>
                 </div>
@@ -341,28 +345,24 @@
         <p>Conception : <a href="https://www.hugovirot.fr ">Hugo Virot</a></p>
     </footer>
 
-    <script>
-        $("body").on("contextmenu", function (e) {
-            return false;
-        });
+    <!-- JS de Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
 
-        function showSectionDetails(sectionId) {
-            console.log(sectionId);
-            let section = document.getElementById(sectionId);
-            if (section.style.display == "none") {
-                section.style.display = "block "
+    <script>
+        // empêcher le clic droit (menu contextuel)
+        document.oncontextmenu = () => { return false };
+
+        // masquer la navbar quand on descend de + de 380 px
+        window.onscroll = function () {
+            let navbar = document.getElementsByTagName('nav')[0]
+            if (window.scrollY > 380) {
+                navbar.classList.add("fixed-top");
             } else {
-                section.style.display = "none "
+                navbar.classList.remove("fixed-top");
             }
         }
-
-        $(window).scroll(function () {
-            if ($(this).scrollTop() > 380) {
-                $('.navbar').addClass("fixed-top");
-            } else {
-                $('.navbar').removeClass("fixed-top");
-            }
-        });
     </script>
 
     <!-- Global site tag (gtag.js) - Google Analytics
