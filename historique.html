@@ -128,7 +128,7 @@
                         <i class="fas fa-file-pdf fa-4x"></i>
                     </div>
                     <div class="row m-auto justify-content-center">
-                        <a href="./documents/historique volley 2001-2020.pdf">
+                        <a href="./documents/historique volley 2001-2020.pdf" target="_blank">
                             <button class="btn brownbutton">Résumé des championnats Ufolep Drome/Ardèche de volley
                                 depuis 2001 avec Agapé</button>
                         </a>
@@ -140,7 +140,7 @@
                         <i class="fas fa-file-pdf fa-4x"></i>
                     </div>
                     <div class="row m-auto justify-content-center">
-                        <a href="./documents/historique SF futsal.pdf">
+                        <a href="./documents/historique SF futsal.pdf" target="_blank">
                             <button class="btn brownbutton">Historique Futsal Sport et Foi Valence depuis 1995</button>
                         </a>
                     </div>
@@ -151,7 +151,7 @@
                         <i class="fas fa-file-pdf fa-4x"></i>
                     </div>
                     <div class="row m-auto justify-content-center">
-                        <a href="./documents/historique volley SF Valence.pdf">
+                        <a href="./documents/historique volley SF Valence.pdf" target="_blank">
                             <button class="btn brownbutton">Historique Volley Sport et Foi Valence depuis 1995</button>
                         </a>
                     </div>
@@ -173,9 +173,9 @@
                     <div class="row m-auto justify-content-center">
                         <i class="fas fa-file-pdf fa-4x"></i>
                     </div>
-                    <div class="row m-auto justify-content-center">
+                    <div class="row m-auto justify-content-center" target="_blank">
                         <a href="./documents/Beth Leasure.pdf">
-                            <button class="btn brownbutton">document sur Beth Leasure (coureuse cycliste chrétienne
+                            <button class="btn brownbutton">document sur Beth Leasure (cycliste chrétienne
                                 américaine liée à l'association)</button>
                         </a>
                     </div>
@@ -501,6 +501,11 @@
             } else {
                 navbar.classList.remove("fixed-top");
             }
+        }
+
+        function showSectionDetails(){
+            let section = document.getElementById('notrehistoire')
+            section.style.display === 'block' ?  section.style.display = 'none' : section.style.display = 'block'
         }
     </script>
 
