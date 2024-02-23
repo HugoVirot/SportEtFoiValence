@@ -81,7 +81,7 @@ i {
 
 #hero {
   min-height: 110vh;
-  background: url("images/imagebienvenue.jpg");
+  background: url(./images/imagebienvenue.jpg);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
