@@ -16,42 +16,6 @@ nav {
   position: fixed;
 }
 
-/* Le bandeau cookie */
-.cookie-banner {
-  display: none;
-  position: fixed;
-  top: 0;
-  width: 100%;
-}
-
-.cookie-banner.active {
-  display: block;
-}
-
-/* Overlay de la boite de dialogue */
-.cookie-inform-and-ask {
-  background-color: grey;
-  display: none;
-  height: 100%;
-  left: 0;
-  position: fixed;
-  top: 0;
-  width: 100%;
-}
-
-.cookie-inform-and-ask.active {
-  display: block;
-}
-
-/*La vraie boîte de dialogue*/
-.cookie-dialog {
-  left: 50%;
-  position: absolute;
-  top: 50%;
-  transform: translate(-50%, -50%);
-  width: 70%;
-}
-
 header img,
 footer img {
   border-radius: 20px;
@@ -113,6 +77,23 @@ i {
   height: 100%;
 }
 
+/***************** HERO ***********/
+
+#hero {
+  min-height: 110vh;
+  background: url("images/imagebienvenue.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+#hero h1 {
+  font-size: 3.2rem;
+  font-weight: bold;
+  color: white;
+  background: linear-gradient(#0f70b7, rgba(0, 0, 0, 0.2));
+}
+
 /* ********************* ACTUALITES ******************** */
 
 #headline {
@@ -129,10 +110,6 @@ i {
   background-color: white;
 }
 
-#headline h1 {
-  font-size: 3.2rem;
-}
-
 .articlesTitles {
   color: #0f70b7;
   background-color: #ddd5d0;
@@ -146,6 +123,11 @@ i {
 
 .articles i {
   color: #f42d23;
+}
+
+video {
+  width: auto;
+  height: auto;
 }
 
 .imagepresentation {
@@ -165,15 +147,7 @@ i {
 }
 
 #quisommesnouscontainer {
-  background-image: url(images/imagebienvenue.jpg);
-  background-position: center;
-  background-size: cover;
-  min-height: 110vh;
-}
-
-#bienvenuetextes {
-  background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2));
-  width: 50vw;
+  background: linear-gradient(#0f70b7, rgba(0, 0, 0, 0.2));
 }
 
 #notrehistoire span {
@@ -326,7 +300,7 @@ footer {
     width: 80vw;
   }
 
-    .imageArticle {
+  .imageArticle {
     width: 75vw !important;
   }
 
@@ -337,13 +311,17 @@ footer {
 
 @media screen and (min-width: 577px) and (max-width: 767px) {
   .imageArticle {
-  width: 55vw !important;
-}
+    width: 55vw !important;
+  }
 }
 
 @media screen and (max-width: 768px) {
   .emissionRadio {
     width: 80vw;
+  }
+
+  video {
+    width: 95%;
   }
 }
 
