@@ -9,7 +9,15 @@ body {
 header,
 nav {
   background-color: #0f70b7;
-  color: white;
+  color: white
+}
+
+nav a {
+  color: white !important
+}
+
+.dropdown-menu a {
+  color : black !important
 }
 
 nav {
