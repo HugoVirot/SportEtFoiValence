@@ -138,133 +138,105 @@
                 <h2 class=" pb-4">ACTUALITES</h2>
             </div>
 
-            <!--------------------- widget HelloAsso ------------------------------>
+            <!--------------------- widget HelloAsso pour inscription ------------------------------>
 
             <div class="container-fluid p-5 mb-5" id="headline">
-                <p><i class="fas fa-calendar-alt p-3"></i>mercredi 28 août 2024</p>
+                <p><i class="fas fa-calendar-alt p-3"></i>mardi 8 septembre 2026</p>
                 <hr>
-                <h3 class="p-3 mb-2">
-                    Inscriptions saison 2024-2025 via HelloAsso
+                <h3 class="p-3 mb-2 fs-1">
+                    Inscriptions saison 2026-2027 via HelloAsso
                 </h3>
                 <!-- <img src="images/" alt="Flyer Camp 2023" class="imageArticle w-50"> -->
                 <p class="p-3 mt-4">
-                    <span style="font-size: 3rem; font-weight: bold;">I</span>nscrivez-vous en quelques minutes pour la
-                    <b>saison
-                        2024-2025</b> via HelloAsso !
+                    <span style="font-size: 2rem; font-weight: bold;">I</span>nscrivez-vous en quelques minutes pour la
+                    <b>saison 2026-2027</b> via HelloAsso !
                 <p>Pour cela, <b>remplissez simplement le formulaire ci-dessous.</b></p>
                 </p>
 
-                <iframe id="haWidget" allowtransparency="true" scrolling="auto"
-                    src="https://www.helloasso.com/associations/sport-et-foi-agape/adhesions/adhesion-2024-2025/widget"
-                    style="width: 100%; height: 750px; border: none;"></iframe>
-            </div>
-
-            <!--------------------- projet madagascar inscription ------------------------------>
-
-            <div class="container-fluid p-5 mb-5" id="headline">
-                <p><i class="fas fa-calendar-alt p-3"></i>jeudi 22 février 2024</p>
-                <hr>
-
-                <h3 class="m-5 fs-1">
-                    Tournoi Volley et Futsal (3 mars 2024) en soutien du projet humanitaire à Madagascar
-                </h3>
-
-                <img src="images/flyer_tournoi_2024-03-03.jpg" alt="Flyer Tournoi Petanque 2023"
-                    class="imageArticle w-75 mb-5">
-
-                <div class="row">
-
-                    <div class="col-xxl-4">
-                        <video controls>
-                            <source src="./images/video_madagascar.mp4" type=video/mp4>
-                        </video>
-                    </div>
-
-                    <div class="col-xxl-8 fs-5 ps-3">
-
-                        <p class="p-3 fw-bold">
-                            <span class="fs-1">S</span>port et Foi France lance un projet humanitaire à Madagascar qui
-                            se
-                            déroulera
-                            au
-                            mois d'avril 2024 : nous avons besoin de votre soutien !
-                        </p>
-
-                        <p class="p-0 p-md-3 m-2">Car sur le plan local nous voulons aussi soutenir ce projet, et un de
-                            nos membres s'est engagé pour rejoindre un effectif d'une vingtaine de jeunes en provenance
-                            de
-                            toute
-                            la
-                            France.</p>
-
-                        <p class="p-0 p-md-3 m-2">Pendant 10 jours, près de la capitale Antananarivo, l'équipe va
-                            réaliser
-                            des
-                            actions humanitaires
-                            sportives pour témoigner de l'amour de Dieu auprès de la population malgache
-                            dans des orphelinats, des prisons pour mineurs, écoles et autres structures locales avec qui
-                            ils
-                            vont
-                            collaborer.</p>
-
-                        <p class="p-0 p-md-3 m-2">Les fonds récoltés par les donateurs serviront à construire de
-                            nouvelles
-                            classes dans une école, offrir
-                            des médailles à tous les jeunes sportifs qu'ils auront rencontrer, et goûters a
-                            plus de 500 enfants qui vont participer aux stages sportifs qu'ils vont animer autour de
-                            différentes
-                            discipline comme la danse, le foot et le basket.</p>
-
-                        <p class="p-0 p-md-3 m-2">Ces fonds serviront également a assurer la logistique et le bon
-                            déroulement
-                            de nos actions notamment au
-                            niveau du transport de l'équipe.
-
-                        <p class="p-0 p-md-3 m-2 fw-bold"> Chaque participant finance son propre voyage, mais votre aide
-                            est
-                            cruciale.
-                            Nous croyons qu'au travers
-                            de chacun on peut apporter la réponse aux besoins que je viens vous partager.</p>
-
-                        <p class="p-0 p-md-3 m-2 fw-bold">Pour soutenir ce projet, un tournoi Volley et Futsal est
-                            organisé : rendez-vous le dimanche 3 mars à la halle des sports de
-                            Valence
-                            pour
-                            cette belle journée festive et
-                            solidaire.
-
-                        <div class="mx-auto">
-                            <ul class="text-start list-group mx-auto fw-bold w-75">
-                                <li class="mt-2">Avec un don de 10€, tu finances 10 goûters</li>
-                                <li class="mt-2">Avec un don de 20€, tu finances 10 médailles qui seront offertes à
-                                    chaque enfant</li>
-                                <li class="mt-2">Avec un don de 50€, tu finances 2000 briques pour la construction de
-                                    nouvelles classes
-                                    d'écoles
-                                </li>
-                                <li class="mt-2">Avec un don de 100€, tu contribues à une demi-journée de transport de
-                                    l'équipe</li>
-                            </ul>
-                        </div>
-                    </div>
+                <div id="haWidgetContainer" class="ha-widget-container">
+                    <button type="button" class="btn btn-light ha-widget-fullscreen-button mx-auto my-5"
+                        onclick="toggleHaWidgetFullscreen()" aria-label="Afficher le formulaire en plein écran"
+                        title="Afficher le formulaire en plein écran">
+                        <i class="fas fa-expand text-white me-2" aria-hidden="true"></i><span id="haWidgetFullscreenLabel">Afficher en plein écran</span>
+                    </button>
+                    <iframe id="haWidget"
+                        allow="payment 'self' https://paymenthub.helloassopay.com https://helloasso.com"
+                        allowtransparency="true" scrolling="auto"
+                        src="https://www.helloasso.com/associations/sport-et-foi-agape/adhesions/adhesion-sport-et-foi-agape-2026-2027/widget"
+                        style="width: 100%; height: 750px; border: none;"
+                        onload="window.addEventListener('message', function(e) { const dataHeight = e.data.height; const haWidgetElement = document.getElementById('haWidget'); if (dataHeight > parseFloat(haWidgetElement.height || 0)) { haWidgetElement.height = dataHeight + 'px'; } });"></iframe>
                 </div>
 
-                <div class="row">
-                    <div class="col-md-6 offset-md-4 border mx-auto mt-5">
-                        <p class="p-3 m-2 fw-bold">Contactez le président Jean-Paul TABOYAN : 06 89 66 25 81</p>
-                    </div>
-                </div>
             </div>
-
 
             <!-------------------------------------------- ACTUS PRECEDENTES---------------------------------------->
 
             <button class="btn btn-danger m-3" type="button" data-bs-toggle="collapse"
                 data-bs-target="#actusprecedentes" aria-expanded="false" aria-controls="actusprecedentes">
-                Plus d'actus
+                <span id="actusprecedentesToggleLabel">Plus d'actus</span>
             </button>
 
             <div class="container-fluid collapse" id="actusprecedentes">
+
+                <!--------------------- projet madagascar inscription ------------------------------>
+
+                <div class="container-fluid p-5 mb-5" id="headline">
+                    <p><i class="fas fa-calendar-alt p-3"></i>jeudi 22 février 2024</p>
+                    <hr>
+
+                    <h3 class="m-5 fs-1">
+                        Tournoi Volley et Futsal (3 mars 2024) en soutien du projet humanitaire à Madagascar
+                    </h3>
+
+                    <img src="images/flyer_tournoi_2024-03-03.jpg" alt="Flyer Tournoi Volley et Futsal 2024"
+                        class="imageArticle w-75 mb-5">
+
+                    <div class="row">
+                        <div class="col-xxl-4">
+                            <video controls>
+                                <source src="./images/video_madagascar.mp4" type="video/mp4">
+                            </video>
+                        </div>
+
+                        <div class="col-xxl-8 fs-5 ps-3">
+                            <p class="p-3 fw-bold">
+                                <span class="fs-1">S</span>port et Foi France lance un projet humanitaire à Madagascar qui
+                                se déroulera au mois d'avril 2024 : nous avons besoin de votre soutien !
+                            </p>
+                            <p class="p-0 p-md-3 m-2">Car sur le plan local nous voulons aussi soutenir ce projet, et un de
+                                nos membres s'est engagé pour rejoindre un effectif d'une vingtaine de jeunes en provenance
+                                de toute la France.</p>
+                            <p class="p-0 p-md-3 m-2">Pendant 10 jours, près de la capitale Antananarivo, l'équipe va réaliser
+                                des actions humanitaires sportives pour témoigner de l'amour de Dieu auprès de la population
+                                malgache dans des orphelinats, des prisons pour mineurs, écoles et autres structures locales.</p>
+                            <p class="p-0 p-md-3 m-2">Les fonds récoltés par les donateurs serviront à construire de nouvelles
+                                classes dans une école, offrir des médailles à tous les jeunes sportifs et proposer des
+                                goûters aux enfants qui participeront aux stages sportifs.</p>
+                            <p class="p-0 p-md-3 m-2">Ces fonds serviront également à assurer la logistique et le bon déroulement
+                                de nos actions, notamment au niveau du transport de l'équipe.</p>
+                            <p class="p-0 p-md-3 m-2 fw-bold">Chaque participant finance son propre voyage, mais votre aide est
+                                cruciale. Nous croyons qu'au travers de chacun, on peut apporter une réponse aux besoins
+                                présentés ici.</p>
+                            <p class="p-0 p-md-3 m-2 fw-bold">Pour soutenir ce projet, un tournoi Volley et Futsal est organisé
+                                le dimanche 3 mars à la halle des sports de Valence pour une journée festive et solidaire.</p>
+
+                            <div class="mx-auto">
+                                <ul class="text-start list-group mx-auto fw-bold w-75">
+                                    <li class="mt-2">Avec un don de 10€, tu finances 10 goûters</li>
+                                    <li class="mt-2">Avec un don de 20€, tu finances 10 médailles offertes à chaque enfant</li>
+                                    <li class="mt-2">Avec un don de 50€, tu finances 2000 briques pour construire de nouvelles classes</li>
+                                    <li class="mt-2">Avec un don de 100€, tu contribues à une demi-journée de transport de l'équipe</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-6 offset-md-4 border mx-auto mt-5">
+                            <p class="p-3 m-2 fw-bold">Contactez le président Jean-Paul TABOYAN : 06 89 66 25 81</p>
+                        </div>
+                    </div>
+                </div>
 
                 <!--------------------- fiches inscription ------------------------------>
 
@@ -1487,7 +1459,7 @@
 
                         <p>Contact : Jean-Paul TABOYAN, président : 06 89 66 25 81</p>
 
-                        <p>Développement et rédaction du site : Hugo VIROT (www.hugovirot.fr)</p>
+                        <p>Développement et rédaction du site : <a href="https://www.hvweb.fr">HV Web</a></p>
 
                         <p>Hébergement : GitHub<br>
                             www.github.com<br>
@@ -1555,7 +1527,7 @@
             </div>
         </div>
 
-        <p>Conception : <a href="https://www.hugovirot.fr ">Hugo Virot</a></p>
+        <p>Conception : <a href="https://www.hvweb.fr ">HV Web</a></p>
     </footer>
 
     <!-- JS de Bootstrap -->
@@ -1586,6 +1558,37 @@
                 section.style.display = "none"
             }
         }
+
+        function toggleHaWidgetFullscreen() {
+            const widgetContainer = document.getElementById('haWidgetContainer');
+            if (document.fullscreenElement) {
+                document.exitFullscreen();
+            } else if (widgetContainer.requestFullscreen) {
+                widgetContainer.requestFullscreen();
+            }
+        }
+
+        document.addEventListener('fullscreenchange', function () {
+            const isFullscreen = document.fullscreenElement === document.getElementById('haWidgetContainer');
+            const button = document.querySelector('.ha-widget-fullscreen-button');
+            const label = document.getElementById('haWidgetFullscreenLabel');
+            const icon = button.querySelector('i');
+            const text = isFullscreen ? 'Retour au site' : 'Afficher en plein écran';
+            button.setAttribute('aria-label', text);
+            button.setAttribute('title', text);
+            label.textContent = text;
+            icon.classList.toggle('fa-expand', !isFullscreen);
+            icon.classList.toggle('fa-compress', isFullscreen);
+        });
+
+        const previousNews = document.getElementById('actusprecedentes');
+        const previousNewsLabel = document.getElementById('actusprecedentesToggleLabel');
+        previousNews.addEventListener('shown.bs.collapse', function () {
+            previousNewsLabel.textContent = 'Replier';
+        });
+        previousNews.addEventListener('hidden.bs.collapse', function () {
+            previousNewsLabel.textContent = 'Plus d\'actus';
+        });
 
     </script>
 

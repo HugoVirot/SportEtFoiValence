@@ -105,9 +105,21 @@ i {
 /* ********************* ACTUALITES ******************** */
 
 #headline {
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
   background-color: #0f70b7;
   color: white;
   border-radius: 20px;
+}
+
+.btn-danger {
+  font-weight: 700;
+  padding: 0.6rem 1.15rem;
+}
+
+.btn-danger.btn-lg {
+  padding: 0.65rem 1.3rem;
 }
 
 #headline i {
@@ -116,6 +128,37 @@ i {
 
 #headline hr {
   background-color: white;
+}
+
+.ha-widget-container {
+  position: relative;
+}
+
+.ha-widget-fullscreen-button {
+  display: block;
+  margin: 0 0 1rem auto;
+  color: white;
+  background-color: #dc3545;
+  border-color: #dc3545;
+  position: relative;
+  z-index: 1;
+}
+
+.ha-widget-fullscreen-button:hover,
+.ha-widget-fullscreen-button:focus {
+  color: white;
+  background-color: #bb2d3b;
+  border-color: #b02a37;
+}
+
+.ha-widget-container:fullscreen {
+  padding: 1rem;
+  overflow: auto;
+  background-color: white;
+}
+
+.ha-widget-container:fullscreen iframe {
+  height: calc(100vh - 4.5rem) !important;
 }
 
 .articlesTitles {
@@ -213,8 +256,8 @@ video {
 }
 
 .sectionimg:hover {
-  transform: scale(1.3);
-  transition: 1s;
+  transform: scale(1.2);
+  transition: 0.5s;
 }
 
 /* ********************* PARTENAIRES ******************** */
@@ -225,8 +268,8 @@ video {
 }
 
 #partnersContainer img:hover {
-  transform: scale(1.3);
-  transition: 1s;
+  transform: scale(1.2);
+  transition: 0.5s;
 }
 
 /* ********************* CONTACT ******************** */
