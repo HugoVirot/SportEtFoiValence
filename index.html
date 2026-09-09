@@ -8,8 +8,9 @@
         content="Site officiel de Sport & Foi Valence, association sportive d'inspiration Chrétienne et protestante | Foot - Futsal - Volley - Badminton - Randonnée">
     <meta property="og:image" content="images/screenshotaccueil.png">
 
-    <!-- bootstrap 5.3 (CSS) -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <!-- bootstrap 5.3.8 (CSS - à jour 08/09/2026) -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
 
     <!-- font awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0/css/all.min.css">
@@ -25,9 +26,9 @@
 
 <body>
 
-    <header class="p-4 pt-5">
+    <header class="p-5 pb-xl-4">
 
-        <div class="container p-4" id="topheader">
+        <div class="container p-2 p-lg-4" id="topheader">
             <div class="row">
                 <div class="col-md-6 offset-sm-1 pr-2 m-auto">
                     <a href="index.html">
@@ -35,11 +36,10 @@
                     </a>
                     <p class="mt-3 mx-auto">depuis 1995 | reconnue d'intérêt général</p>
                 </div>
-                <div class="col-md-4 pt-3 offset-sm-2 m-auto">
+                <div class="col-md-4 offset-sm-2 m-auto">
                     <p>
-                    <h5>Association sportive d'inspiration <br>chrétienne et protestante</h5>
-                    FUTSAL COMPETITION<br>
-                    FUTSAL LOISIR<br>
+                    <p class="mb-1">Association sportive d'inspiration <br>chrétienne et protestante</p>
+                    FUTSAL<br>
                     BADMINTON<br>
                     VOLLEY <br>
                     RANDONNEE
@@ -49,6 +49,10 @@
         </div>
 
         <nav class="navbar navbar-dark navbar-expand-lg p-3">
+
+            <div class="navbar-mobile-logo">
+                <a href="index.html"><img src="images/logo2.png" alt="Sport et Foi"></a>
+            </div>
 
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
@@ -75,8 +79,6 @@
                         </a>
                         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                             <a class="dropdown-item" href="#sections">Accueil sections</a>
-                            <div class="dropdown-divider"></div>
-                            <a class="dropdown-item" href="foot.html">Foot réfugiés</a>
                             <div class="dropdown-divider"></div>
                             <a class="dropdown-item" href="futsal.html">Futsal</a>
                             <div class="dropdown-divider"></div>
@@ -106,16 +108,17 @@
 
         <!---------------------------------------- HERO --------------------------------------------->
 
-        <section id="hero" class="container-fluid p-2 d-flex justify-content-center align-items-center">
+        <section id="hero"
+            class="container-fluid container-2xl p-2 d-flex justify-content-center align-items-center rounded-3">
 
             <div class="d-flex flex-column">
 
-                <h1 class="p-4 rounded-pill">Association sportive d'inspiration <br>chrétienne et protestante</h1>
+                <h1 class="p-4 border-radius-20">Association sportive d'inspiration <br>chrétienne et protestante</h1>
 
                 <div class="row mt-3">
                     <div class="col-md-6">
                         <a href="#qui-sommes-nous">
-                            <button class="btn btn-lg btn-danger mb-2 py-2 px-5">Découvrir</button>
+                            <button class="btn btn-lg btn-danger mb-2 py-2 px-4">Découvrir l'asso</button>
                         </a>
                     </div>
                     <div class="col-md-6">
@@ -130,7 +133,7 @@
         </section>
 
         <!---------------------------------------- ACTUS --------------------------------------------->
-        <section id="actualites">
+        <section id="actualites" class="my-5">
 
             <div class="container pt-5">
                 <div class="row justify-content-center"><i class="far fa-3x fa-newspaper"></i></div>
@@ -155,7 +158,8 @@
                     <button type="button" class="btn btn-light ha-widget-fullscreen-button mx-auto my-5"
                         onclick="toggleHaWidgetFullscreen()" aria-label="Afficher le formulaire en plein écran"
                         title="Afficher le formulaire en plein écran">
-                        <i class="fas fa-expand text-white me-2" aria-hidden="true"></i><span id="haWidgetFullscreenLabel">Afficher en plein écran</span>
+                        <i class="fas fa-expand text-white me-2" aria-hidden="true"></i><span
+                            id="haWidgetFullscreenLabel">Afficher en plein écran</span>
                     </button>
                     <iframe id="haWidget"
                         allow="payment 'self' https://paymenthub.helloassopay.com https://helloasso.com"
@@ -197,32 +201,46 @@
 
                         <div class="col-xxl-8 fs-5 ps-3">
                             <p class="p-3 fw-bold">
-                                <span class="fs-1">S</span>port et Foi France lance un projet humanitaire à Madagascar qui
+                                <span class="fs-1">S</span>port et Foi France lance un projet humanitaire à Madagascar
+                                qui
                                 se déroulera au mois d'avril 2024 : nous avons besoin de votre soutien !
                             </p>
-                            <p class="p-0 p-md-3 m-2">Car sur le plan local nous voulons aussi soutenir ce projet, et un de
-                                nos membres s'est engagé pour rejoindre un effectif d'une vingtaine de jeunes en provenance
+                            <p class="p-0 p-md-3 m-2">Car sur le plan local nous voulons aussi soutenir ce projet, et un
+                                de
+                                nos membres s'est engagé pour rejoindre un effectif d'une vingtaine de jeunes en
+                                provenance
                                 de toute la France.</p>
-                            <p class="p-0 p-md-3 m-2">Pendant 10 jours, près de la capitale Antananarivo, l'équipe va réaliser
-                                des actions humanitaires sportives pour témoigner de l'amour de Dieu auprès de la population
-                                malgache dans des orphelinats, des prisons pour mineurs, écoles et autres structures locales.</p>
-                            <p class="p-0 p-md-3 m-2">Les fonds récoltés par les donateurs serviront à construire de nouvelles
+                            <p class="p-0 p-md-3 m-2">Pendant 10 jours, près de la capitale Antananarivo, l'équipe va
+                                réaliser
+                                des actions humanitaires sportives pour témoigner de l'amour de Dieu auprès de la
+                                population
+                                malgache dans des orphelinats, des prisons pour mineurs, écoles et autres structures
+                                locales.</p>
+                            <p class="p-0 p-md-3 m-2">Les fonds récoltés par les donateurs serviront à construire de
+                                nouvelles
                                 classes dans une école, offrir des médailles à tous les jeunes sportifs et proposer des
                                 goûters aux enfants qui participeront aux stages sportifs.</p>
-                            <p class="p-0 p-md-3 m-2">Ces fonds serviront également à assurer la logistique et le bon déroulement
+                            <p class="p-0 p-md-3 m-2">Ces fonds serviront également à assurer la logistique et le bon
+                                déroulement
                                 de nos actions, notamment au niveau du transport de l'équipe.</p>
-                            <p class="p-0 p-md-3 m-2 fw-bold">Chaque participant finance son propre voyage, mais votre aide est
+                            <p class="p-0 p-md-3 m-2 fw-bold">Chaque participant finance son propre voyage, mais votre
+                                aide est
                                 cruciale. Nous croyons qu'au travers de chacun, on peut apporter une réponse aux besoins
                                 présentés ici.</p>
-                            <p class="p-0 p-md-3 m-2 fw-bold">Pour soutenir ce projet, un tournoi Volley et Futsal est organisé
-                                le dimanche 3 mars à la halle des sports de Valence pour une journée festive et solidaire.</p>
+                            <p class="p-0 p-md-3 m-2 fw-bold">Pour soutenir ce projet, un tournoi Volley et Futsal est
+                                organisé
+                                le dimanche 3 mars à la halle des sports de Valence pour une journée festive et
+                                solidaire.</p>
 
                             <div class="mx-auto">
                                 <ul class="text-start list-group mx-auto fw-bold w-75">
                                     <li class="mt-2">Avec un don de 10€, tu finances 10 goûters</li>
-                                    <li class="mt-2">Avec un don de 20€, tu finances 10 médailles offertes à chaque enfant</li>
-                                    <li class="mt-2">Avec un don de 50€, tu finances 2000 briques pour construire de nouvelles classes</li>
-                                    <li class="mt-2">Avec un don de 100€, tu contribues à une demi-journée de transport de l'équipe</li>
+                                    <li class="mt-2">Avec un don de 20€, tu finances 10 médailles offertes à chaque
+                                        enfant</li>
+                                    <li class="mt-2">Avec un don de 50€, tu finances 2000 briques pour construire de
+                                        nouvelles classes</li>
+                                    <li class="mt-2">Avec un don de 100€, tu contribues à une demi-journée de transport
+                                        de l'équipe</li>
                                 </ul>
                             </div>
                         </div>
@@ -989,11 +1007,11 @@
 
         <!-------------------------------------------- slider photos ------------------------------------->
 
-        <section id="galerie">
+        <section id="galerie" class="my-5">
 
             <div class="container pt-5">
                 <div class="row justify-content-center"><i class="fas fa-3x fa-camera-retro"></i></div>
-                <h3 class="pt-2 pb-4">GALERIE PHOTOS </h3>
+                <h3 class="pt-2 pb-4">LES EQUIPES </h3>
             </div>
 
             <div id="carouselExampleCaptions" class="carousel slide container-md" data-bs-ride="false" id="carouselDiv">
@@ -1061,7 +1079,7 @@
 
         <!----------------------------------- qui sommes-nous ------------------------------------->
 
-        <section id="qui-sommes-nous">
+        <section id="qui-sommes-nous" class="my-5">
             <div class="container pt-5">
                 <div class="row justify-content-center"><i class="fas fa-users fa-3x"></i></div>
                 <h2 class="pt-2 pb-4">QUI SOMMES-NOUS ?</h2>
@@ -1070,15 +1088,17 @@
             <div class="container-fluid p-5 border border-secondary sections justify-content-center text-light"
                 id="quisommesnouscontainer">
                 <br>
-                <div id="bienvenuetextes" class="col m-auto p-4">
-                    <h3>Sport & Foi est une association sportive d'inspiration chrétienne et protestante.</h3><br>
-                    <h4>Elle existe au niveau national :
+                <div id="bienvenuetextes" class="col m-auto p-5">
+                    <p class="fs-3">Sport & Foi est une association sportive d'inspiration chrétienne et protestante.
+                    </p>
+                    <p class="fs-4">Elle existe au niveau national :
                         <a href="https://sportetfoifrance.org/">
                             <button class="btn btn-danger m-1">Sport & Foi France</button>
                         </a>
-                    </h4><br>
-                    <h5>Il existe aussi des sections locales indépendantes, comme Sport & Foi Valence.</h5><br>
-                    <p class="pb-3">Le but de S&F Valence est de se retrouver tous ensemble (chrétiens ou non, sportifs
+                    </p>
+                    <p class="fs-4">Il existe aussi des sections locales indépendantes, comme Sport & Foi Valence.</p>
+                    <p class="fs-4 pb-3">Le but de S&F Valence est de se retrouver tous ensemble (chrétiens ou non,
+                        sportifs
                         confirmés ou non, personnes en situation précaire...) autour des valeurs du sport.</p>
 
                     <h5 class="m-4">Pour en savoir plus : </h5>
@@ -1104,7 +1124,7 @@
             </div>
 
             <!-- vidéo -->
-            <div class="container iframeContainer mt-5 border border-primary">
+            <div class="container iframeContainer mt-4 border border-primary">
                 <iframe class="responsive-iframe" src="https://www.youtube.com/embed/9t4muqGu5qU" frameborder="0"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                     allowfullscreen></iframe>
@@ -1112,60 +1132,8 @@
         </section>
 
 
-        <!-- ***************************************** INSCRIPTIONS ********************************************** -->
-
-
-        <section id="inscription">
-            <div class="container pt-5">
-                <div class="row justify-content-center"><i class="fas fa-3x fa-sign-in-alt"></i></div>
-                <h2 class="pt-2 pb-4">INSCRIPTION 2023-2024</h2>
-            </div>
-
-            <div class="container-fluid p-5" id="inscriptions">
-                <h3 class="text-light w-md-50 m-auto p-3">Vous souhaitez vous inscrire pour la saison 2023-2024
-                    ?<br>Téléchargez vos documents ici !</h3>
-
-                <div class="row p-md-5 m-5">
-                    <div class="col-md-3 p-2">
-                        <i class="fas fa-4x fa-paste text-light"></i>
-                        <p>
-                            <a href="./documents/adhesion2023/fiche_inscription futsal_2023-2024.pdf" target="_blank">
-                                <button class="btn btn-danger btn-lg mt-2 fs-5">Fiche d'inscription FUTSAL</button>
-                            </a>
-                        </p>
-                    </div>
-                    <div class="col-md-3 p-2">
-                        <i class="fas fa-4x fa-paste text-light"></i>
-                        <p>
-                            <a href="./documents/adhesion2023/fiche_inscription_bad_volley_2023-2024.pdf"
-                                target="_blank">
-                                <button class="btn btn-danger btn-lg mt-2 fs-5">Fiche d'inscription BADMINTON /
-                                    VOLLEY</button>
-                            </a>
-                        </p>
-                    </div>
-                    <div class="col-md-3 p-2">
-                        <i class="fas fa-4x fa-heartbeat text-light"></i>
-                        <p>
-                            <a href="./documents/adhesion2022/CERFA QUESTIONNAIRE MEDICAL.docx" target="_blank">
-                                <button class="btn btn-danger btn-lg mt-2 fs-5">Questionnaire santé</button>
-                            </a>
-                        </p>
-                    </div>
-                    <div class="col-md-3 p-2">
-                        <i class="fas fa-4x fa-handshake text-light"></i>
-                        <p>
-                            <a href="./documents/Règlement interieur 2019.docx" target="_blank">
-                                <button class="btn btn-danger btn-lg mt-2 fs-5">Réglement intérieur</button>
-                            </a>
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
         <!-- ***************************************** SECTIONS ********************************************** -->
-        <section id="sections">
+        <section id="sections" class="my-5">
             <div class="container pt-5">
                 <div class="row justify-content-center"><i class="fas fa-3x fa-volleyball-ball"></i></div>
                 <h3 class="pt-2 p-4">LES SECTIONS </h3>
@@ -1174,43 +1142,6 @@
             <div class="container sections justify-content-center">
 
                 <div class="row">
-
-                    <!-- ********************** section football *********************** -->
-
-                    <div class="col-xl-6 p-3" onclick="showSectionDetails('sectionFoot')">
-
-                        <img src="images/football.jpg" alt="football" class="sectionimg">
-
-                        <div class="card text-center mt-2" id="sectionFoot" style="display: none;">
-                            <div class="card-header brownarea">
-                                <h4>Section Football réfugiés</h4>
-                            </div>
-                            <div class="card-body">
-                                <a href="foot.html"><button class="btn btn-danger m-3">Accueil Foot
-                                        réfugiés</button></a>
-
-                                <p class="card-text"><i class="fas fa-user"></i> Responsable : Christophe CASANOVA </p>
-                                <p class="card-text"><i class="fas fa-phone"></i> 06 63 23 97 41</p>
-                                <p class="card-text"><i class="fas fa-at"></i> christophe.casanova2007@gmail.com</p>
-                                <p class="card-text"><i class="fas fa-user"></i> Correspondant : Serge CARO </p>
-                                <p class="card-text"><i class="fas fa-phone"></i> 06 26 62 19 12</p>
-                                <p class="card-text"><i class="fas fa-calendar"></i> Lundi 20h-22h </p>
-                                <p class="card-text"><i class="fa fa-map-marker" aria-hidden="true"></i> VALENCE -
-                                    gymnase
-                                    Marcel Pagnol</p>
-                                <p class="font-weight-bold"> à partir du mois de mai : football en extérieur (mêmes
-                                    horaires)</p>
-                                <p class="card-text"><i class="fa fa-map-marker" aria-hidden="true"></i> VALENCE - stade
-                                    de
-                                    la Chamberlière (terrain annexe)</p>
-                            </div>
-                            <div class="card-footer brownarea">
-                                Intéressé(e) ? Contactez le responsable !
-                            </div>
-                        </div>
-
-                    </div>
-
 
                     <!-- ********************** section futsal *********************** -->
 
@@ -1226,8 +1157,6 @@
 
                                 <p class="card-text">Responsable : Wameng LY </p>
                                 <p class="card-text"><i class="fas fa-at"></i> wamengly@hotmail.com</p>
-                                <p class="card-text"><i class="fas fa-user"></i> Correspondant : Daniel BOURGEOIS </p>
-                                <p class="card-text"><i class="fas fa-phone"></i> 07 81 12 68 54</p>
                                 <p class="card-text"><i class="fas fa-calendar"></i> jeudi : 19h00 - 21h30
                                 </p>
                                 <p class="card-text"><i class="fa fa-map-marker" aria-hidden="true"></i> VALENCE -
@@ -1330,7 +1259,7 @@
 
         <!----------------------------- partenaires --------------------------->
 
-        <section id="partenaires">
+        <section id="partenaires" class="my-5 pt-3">
             <div class="container pt-5">
                 <div class="row justify-content-center"><i class="far fa-3x fa-handshake"></i></div>
                 <h3 class="pt-2 p-4">PARTENAIRES </h3>
@@ -1374,36 +1303,45 @@
                 <h3 class="pt-2 p-4">CONTACT</h3>
             </div>
 
-            <div class="container p-5 text-dark text-center" id="contact">
-                <h4><b>Le bureau</b></h4><br>
-                <h5><b>président</b> : Jean-Paul TABOYAN</h5>
-                <p><i class="fas fa-phone"></i> 06 89 66 25 81</p>
-                <h5><b>Vice-président</b> : Wameng LY</h5>
-                <p><i class="fas fa-at"></i> wamengly@hotmail.com</p>
-                <h5><b>Secrétaire</b> : Caroline MANOUKIAN</h5>
-                <p><i class="fas fa-at"></i> sportetfoi.agape26@gmail.com</h5>
-                </p>
-                <h5><b>Trésorier</b> : Christian ARMAND</h5>
-                </p>
-                <br>
-                <h4><b>Les sections</b></h4><br>
-                <h5><b>entraîneur foot réfugiés</b> : Christophe CASANOVA</h5>
-                <p><i class="fas fa-phone"></i> 06 63 23 97 41</p>
-                <p class="card-text"><i class="fas fa-user"></i> Correspondant : Serge CARO </p>
-                <p class="card-text"><i class="fas fa-phone"></i> 06 26 62 19 12</p>
-                <h5><b>responsable futsal</b> : Wameng LY</h5>
-                <p><i class="fas fa-at"></i> wamengly@hotmail.com</p>
-                <p class="card-text"><i class="fas fa-user"></i> Correspondant : Daniel BOURGEOIS </p>
-                <p class="card-text"><i class="fas fa-phone"></i> 07 81 12 68 54</p>
-                <h5><b>responsable volley</b> : Jean-Paul TABOYAN (président)</p>
-                    <p><i class="fas fa-phone"></i> 06 89 66 25 81</p>
-                    </p>
-                    <h5><b>responsable badminton</b> : Caroline MANOUKIAN</h5>
-                    <p><i class="fas fa-at"></i> sportetfoi.agape26@gmail.com
-                </h5>
-                </p>
-                <h5><b>responsables randonnée</b> : Jean-Paul TABOYAN</h5>
-                <p><i class="fas fa-phone"></i> 06 89 66 25 81</p>
+            <div class="container px-5 pb-5 text-dark text-center" id="contact">
+
+                <div class="row">
+                    <div class="col-lg-6 text-center">
+                        <h4 class="my-5"><b>Le bureau</b></h4>
+                        <div class="row justify-content-center">
+                            <div class="text-start bureausections">
+                                <h5><b>président</b> : Jean-Paul TABOYAN</h5>
+                                <p><i class="fas fa-phone"></i> 06 89 66 25 81</p>
+                                <h5><b>Vice-président</b> : Wameng LY</h5>
+                                <p><i class="fas fa-at"></i> wamengly@hotmail.com</p>
+                                <h5><b>Secrétaire</b> : Caroline MANOUKIAN</h5>
+                                <p><i class="fas fa-at"></i> sportetfoi.agape26@gmail.com</h5>
+                                </p>
+                                <h5><b>Trésorier</b> : Christian ARMAND</h5>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-6 text-center">
+                        <h4 class="my-5"><b>Les sections</b></h4>
+                        <div class="row justify-content-center">
+                            <div class="text-start bureausections">
+                                <h5><b>responsable futsal</b> : Wameng LY</h5>
+                                <p><i class="fas fa-at"></i> wamengly@hotmail.com</p>
+                                <h5><b>responsable volley</b> : Jean-Paul TABOYAN (président)</p>
+                                    <p class="fs-6"><i class="fas fa-phone"></i> 06 89 66 25 81</p>
+                                    </p>
+                                    <h5><b>responsable badminton</b> : Caroline MANOUKIAN</h5>
+                                    <p><i class="fas fa-at"></i> sportetfoi.agape26@gmail.com
+                                </h5>
+                                </p>
+                                <h5><b>responsable randonnée</b> : Jean-Paul TABOYAN</h5>
+                                <p><i class="fas fa-phone"></i> 06 89 66 25 81</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
 
@@ -1423,7 +1361,6 @@
                 </div>
                 <div class="col-sm-4">
                     <p>
-                        FOOT REFUGIES<br>
                         FUTSAL<br>
                         BADMINTON<br>
                         VOLLEY <br>
@@ -1432,7 +1369,7 @@
                 </div>
             </div>
         </div>
-        <p>© Copyright 2022 Sport & Foi Agapé Valence</p>
+        <p>© Copyright 2022-2026 Sport & Foi Agapé Valence</p>
 
         <button type="button" class="btn brownbutton mb-2" data-bs-toggle="modal" data-bs-target="#mentionslegales">
             Mentions légales
@@ -1528,7 +1465,9 @@
     </footer>
 
     <!-- JS de Bootstrap -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
 
     <script>
         // empêcher le clic droit (menu contextuel)
@@ -1539,8 +1478,10 @@
             let navbar = document.getElementsByTagName('nav')[0]
             if (window.scrollY > 380) {
                 navbar.classList.add("fixed-top");
+                navbar.classList.add("scrolled");
             } else {
                 navbar.classList.remove("fixed-top");
+                navbar.classList.remove("scrolled");
             }
         }
 
